@@ -91,7 +91,7 @@ module.exports = function (grunt) {
             }
           },
           src: {
-            files: ['src/**/*.js', 'src/**/*.css', 'src/**/*.html'], /*, '!lib/dontwatch.js'],*/
+            files: ['src/**/*.js', 'src/**/*.css', 'src/**/*.html', 'src/data/*.json'], /*, '!lib/dontwatch.js'],*/
             tasks: ['default']
           },
           test: {

@@ -1,93 +1,12 @@
-var sp;
-var models;
-var search;
-var standardSearchParameters = {"pageSize":3, "searchArtists":false, "searchTracks": true, "searchAlbums":false};
 
 var searchingFestival;
-
-var artistsData;
 var festivalData;
 var foundTracks = [];
 
-function timeFormat(duration) {
-    var seconds = duration / 1000;
-    var minutes = Math.floor(seconds / 60);
-    seconds = seconds % (60);
-
-    return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-}
-
-
-function runSearch() {
-
-    searchingArtist = artistsData.shift();
-
-    if(searchingArtist) {
-        search = new models.Search('artist:"' + searchingArtist + '"', standardSearchParameters);
-        search.localResults = models.LOCALSEARCHRESULTS.APPEND;
-   
-        var searchHTML = document.getElementById('search');
-
-        search.observe(models.EVENT.CHANGE, function() {
-           foundTracks.concat(search.tracks.slice(0));
-
-            console.log("--- " + searchingArtist + " ---");
-            $('#playlistDisplay > tbody:last').append('<tr scope="row" class="spec"><th colspan="2">' + searchingArtist + '</th></tr>');
-
-            search.tracks.forEach(function(track) {
-                    console.log(track);
-                    $('#playlistDisplay > tbody:last').append('<tr><td>' + track.name + '</td><td>' + timeFormat(track.duration) + '</td></tr>');
-                    foundTracks.push(track);
-                });
-
-            if(artistsData.length) {
-                runSearch();
-            }
-
-        });
-
-        search.appendNext();
-    }
-}
-
-function startSearch(festivalId) {
-
-    foundTracks = [];
-    festivalData = festivalId;
-
-    $.getJSON('sp://festival-generator/data/'+festivalId+'.json', function(data) {
-        artistsData = data;
-        runSearch();
-    });
-
-}
-
-function generatePlaylist() {
-    console.log(foundTracks);
-
-    var newFestivalPlaylist = new models.Playlist("FG - Top 3 Songs");
-    $.each(foundTracks, function(index, value) { newFestivalPlaylist.add(value);});
-}
-
-
-
-function displayResults() {
-    for(i=0;i<foundTracks.length;i++){
-        var link = document.createElement('li');
-        var a = document.createElement('a');
-        a.href = foundTracks[i].uri;
-        link.appendChild(a);
-        a.innerHTML = '<b>' + foundTracks[i].name + '</b> <i>' + foundTracks[i].duration + '</i>';
-        searchHTML.appendChild(link);
-    }         
-}
-
 function initPage() {
-    /* Instantiate the global sp object; include models & views */
-    sp = getSpotifyApi(1);
-    models = sp.require('sp://import/scripts/api/models');
+//                $('.flexigrid').flexigrid();
 
-//    $('#generatePlaylist').change(function() { startSearch });
+    initSpotify();
 
       // load data
       $.getJSON('data/festivals.json', function(data) {
@@ -136,14 +55,15 @@ function initPage() {
 
     console.log(artistsData);
 
+    // Wrong place!
+    $('#playlistDisplay > tbody').empty();
+    foundTracks = [];
+
     runSearch();
     });
 
-    $('#generatePlaylist').click(function() {generatePlaylist();});
-
-//$("#target").click(function() {
- // alert("Handler for .click() called.");
-//});
-
+    $('#savePlaylist').click(function() {savePlaylist();});
+    $('#playPlaylist').click(function() {addSongsToPlayQueue();});
 }
+
 $(document).ready( initPage() );

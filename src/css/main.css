@@ -10,3 +10,10 @@ background-size: 800px 92px;
 body {
   background-image: url('/assets/old_mathematics.png');
 }
+
+.playlistContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 200px;
+  width: auto;
+}
