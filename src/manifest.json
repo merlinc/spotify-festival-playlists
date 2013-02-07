@@ -1,0 +1,27 @@
+{
+    "AppDescription": {
+        "en": "A playlist generator for festivals"
+    },
+    "AppIcon": {
+        "36x18": "sp://assets/icon.png"
+    },
+    "AppName": {
+        "en": "Festival Playlists"
+     },
+    "BundleIdentifier": "festival-playlists",
+    "BundleType": "Application",
+    "BundleVersion": "0.0.1",
+    "RequiredInterface": 1,
+    "RequiredPermissions": [
+        "http://festivalplaylists.com"
+    ],
+    "SupportedLanguages": [
+        "en"
+    ],
+    "VendorIdentifier": "com.festivalplaylists",
+    "Dependencies": {
+        "api": "0.1.0",
+        "resources": "0.1.0",
+        "util": "0.1.0"
+    }
+}

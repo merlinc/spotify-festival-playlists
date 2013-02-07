@@ -1,0 +1,12 @@
+.navbar .navbar-inner {
+background-image: url('/assets/header.jpg');
+background-size: 800px 92px;
+}
+
+.navbar .container .brand {
+  color: #ff0000;
+}
+
+body {
+  background-image: url('/assets/old_mathematics.png');
+}
