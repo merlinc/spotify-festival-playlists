@@ -7,8 +7,12 @@ background-size: 800px 92px;
   color: #ff0000;
 }
 
-body {
+html {
   background-image: url('/assets/old_mathematics.png');
+}
+
+body {
+  background: transparent;
 }
 
 .playlistContainer {
