@@ -55,11 +55,7 @@ function initPage() {
 
     console.log(artistsData);
 
-    // Wrong place!
-    $('#playlistDisplay > tbody').empty();
-    foundTracks = [];
-
-    runSearch();
+    startSearch();
     });
 
     $('#savePlaylist').click(function() {savePlaylist();});

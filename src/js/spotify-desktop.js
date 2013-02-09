@@ -1,10 +1,3 @@
-var sp;
-var models;
-var search;
-var standardSearchParameters = {"pageSize":3, "searchArtists":false, "searchTracks": true, "searchAlbums":false};
-var searchingArtist;
-var artistsData;
-
 function runSearch() {
 
     searchingArtist = artistsData.shift();
@@ -56,6 +49,24 @@ function initSpotify() {
     sp = getSpotifyApi(1);
     models = sp.require('sp://import/scripts/api/models');
 }
+
+function startSearch() {
+    // Wrong place!
+  $('#playlistDisplay > tbody').empty();
+  foundTracks = [];
+
+  var sp;
+  var models;
+  var search;
+  var standardSearchParameters = {"pageSize":3, "searchArtists":false, "searchTracks": true, "searchAlbums":false};
+  var searchingArtist;
+  var artistsData;
+    
+  initSpotify();
+
+  runSearch();
+}
+
 
 function createPlaylist(playlistTracks, name) {
     console.log(playlistTracks);
