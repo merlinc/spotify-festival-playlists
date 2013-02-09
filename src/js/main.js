@@ -1,12 +1,4 @@
-
-var searchingFestival;
-var festivalData;
-var foundTracks = [];
-
 function initPage() {
-//                $('.flexigrid').flexigrid();
-
-    initSpotify();
 
       // load data
       $.getJSON('data/festivals.json', function(data) {
@@ -43,7 +35,7 @@ function initPage() {
 
     // choose stages
   $("#stages").change(function() {
-    artistsData = [];
+    var artistsData = [];
 
     $.each($("#stages option:selected"), function(key, stage) {
       $.each($(stage).data(), function(key, band) {
@@ -55,11 +47,11 @@ function initPage() {
 
     console.log(artistsData);
 
-    startSearch();
+    SpotifyProxy.startSearch(artistsData);
     });
 
-    $('#savePlaylist').click(function() {savePlaylist();});
-    $('#playPlaylist').click(function() {addSongsToPlayQueue();});
+    $('#savePlaylist').click(function() {SpotifyProxy.savePlaylist();});
+    $('#playPlaylist').click(function() {SpotifyProxy.addSongsToPlayQueue();});
 }
 
 $(document).ready( initPage() );
