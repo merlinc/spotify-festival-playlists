@@ -1,16 +1,19 @@
 function initPage() {
 
-      // load data
-      $.getJSON('data/festivals.json', function(data) {
-        var festivalItems = [];
-        festivalItems.push('<option value="">Select a festival</option>');
+    // disable dragging of images
+    $('img').bind('dragstart', function(event) { event.preventDefault(); });
 
-        $.each(data, function(key, val) {
-          festivalItems.push('<option value="' + val.data + '">' + val.festival + '</option>');
-        });
-       
-       $('#festivals').empty().append(festivalItems);
-      });
+  // load data
+  $.getJSON('data/festivals.json', function(data) {
+    var festivalItems = [];
+    festivalItems.push('<option value="">Select a festival</option>');
+
+    $.each(data, function(key, val) {
+      festivalItems.push('<option value="' + val.data + '">' + val.festival + '</option>');
+    });
+   
+   $('#festivals').empty().append(festivalItems);
+  });
 
 
       // choose a festival
