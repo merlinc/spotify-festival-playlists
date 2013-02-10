@@ -1,6 +1,4 @@
 .navbar .navbar-inner {
-background-image: url('/assets/header.jpg');
-background-size: 800px 92px;
 }
 
 .navbar .container .brand {
@@ -15,9 +13,73 @@ body {
   background: transparent;
 }
 
-.playlistContainer {
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 200px;
-  width: auto;
+
+.brandbar {
+  background-image: url('/assets/header.jpg');
+  background-size: 800px 92px;
+}
+
+.brandbar > h1 {
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+#stagesList {
+  width: 200px;
+  height: 100px;
+}
+.festivals {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
+  box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
+  padding: 10px;
+}
+
+.stages {
+  width: 400px;
+  display: inline-block;
+  background-color: #ffffff;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
+  box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
+  padding: 10px;
+}
+
+.playlists {
+  margin-top: 20px;
+  width: 700px;
+  background-color: #ffffff;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
+  box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
+  padding: 10px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.sp-list {
+  width: 600px;
+}
+
+.sp-item > .sp-track-field-star {
+  width: 40px;
+}
+
+.sp-track-field-name { width: 250px; }
+.sp-track-field-artist { width: 150px; }
+.sp-track-field-popularity { width: 40px; }
+
+/* overriding eve.css */
+.sp-list a > :nth-child(2) {
+width: 250px;
 }

@@ -12,14 +12,14 @@ function initPage() {
       festivalItems.push('<option value="' + val.data + '">' + val.festival + '</option>');
     });
    
-   $('#festivals').empty().append(festivalItems);
+   $('#festivalsList').empty().append(festivalItems);
   });
 
 
       // choose a festival
-  $("#festivals").change(function() {
+  $("#festivalsList").change(function() {
 
-    dataURL = $('#festivals option:selected').val();
+    dataURL = $('#festivalsList option:selected').val();
 
     if(dataURL) {
       $.getJSON('data/' + dataURL, function(data) {
@@ -31,16 +31,16 @@ function initPage() {
           stageItems.push(element);
         });
        
-       $('#stages').empty().append(stageItems);
+       $('#stagesList').empty().append(stageItems);
       });
     }
   });
 
     // choose stages
-  $("#stages").change(function() {
+  $("#stagesList").change(function() {
     var artistsData = [];
 
-    $.each($("#stages option:selected"), function(key, stage) {
+    $.each($("#stagesList option:selected"), function(key, stage) {
       $.each($(stage).data(), function(key, band) {
         artistsData.push(band.name);
       });
