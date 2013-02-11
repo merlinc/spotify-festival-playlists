@@ -39,6 +39,12 @@ module.exports = function (grunt) {
                     {'<%= distdir %>/': 'src/index.html'}]
 
           },
+          appJS: {
+            files: [{'<%= distdir%>/js/': 'src/js/app.js'},
+                    {'<%= distdir%>/js/': 'src/js/spotifyDesktop.js'},
+                    {'<%= distdir%>/js/': 'src/js/ui.js'}
+            ]
+          },
           bootstrapcss: {
             files:[{'<%= distdir %>/css/': 'vendor/bootstrap/css/bootstrap.css'},
                     {'<%= distdir %>/css/': 'vendor/bootstrap/css/bootstrap-responsive.css'}]
@@ -52,13 +58,13 @@ module.exports = function (grunt) {
             src:['<banner:meta.banner>', '<config:src.js>'],
             dest:'<%= distdir %>/<%= pkg.name %>.js'
           },
-          app: {
-            src:['src/**/*.js'],
-            dest: '<%= distdir %>/js/spotify-playlist.js'
-          },
           jquery: {
             src:['vendor/jquery/*.js'],
             dest: '<%= distdir %>/js/jquery.js'
+          },
+          requirejs: {
+            src:['vendor/requirejs/*.js'],
+            dest: '<%= distdir %>/js/require.js'
           }
         },
         test: {
