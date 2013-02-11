@@ -64,8 +64,10 @@ var SpotifyProxy = (function() {
 
     var player = new views.Player();
     player.context = pl;
+     $('#addPlaylist').show();
+    //$("#playerNode").empty();
+    //$("#playerNode").append(player.node);
     $("#playlistNode").empty();
-    $("#playlistNode").append(player.node);
     $("#playlistNode").append(list.node);
 
   };
@@ -89,9 +91,22 @@ var SpotifyProxy = (function() {
       return newFestivalPlaylist;
   };
 
-  var savePlaylist = function() {
-      var savedPlaylist = createPlaylist(foundTracks, "Dev - Top 3");
+  var savePlaylist = function(playlistName) {
+      var savedPlaylist = createPlaylist(foundTracks, "Festival Playlists - " + playlistName);
   };
+
+  var applyOnlineOffline = function() {
+    if(2 === models.session.state) {
+          $('.offlineContainer').show();
+          $('.container').hide();
+      } else {
+          $('.container').show();
+          $('.offlineContainer').hide();
+      }
+  };
+
+  applyOnlineOffline();
+  models.session.observe(models.EVENT.STATECHANGED, applyOnlineOffline);
    
     // Return the object that is assigned to Module
     return {

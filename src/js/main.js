@@ -3,6 +3,7 @@ function initPage() {
     // disable dragging of images
     $('img').bind('dragstart', function(event) { event.preventDefault(); });
 
+
   // load data
   $.getJSON('data/festivals.json', function(data) {
     var festivalItems = [];
@@ -53,8 +54,23 @@ function initPage() {
     SpotifyProxy.startSearch(artistsData);
     });
 
-    $('#savePlaylist').click(function() {SpotifyProxy.savePlaylist();});
-    $('#playPlaylist').click(function() {SpotifyProxy.addSongsToPlayQueue();});
+    $('#addPlaylist').click(function() {
+      var playlistName = $("#festivalsList option:selected").text();
+      var stageNames = [];
+      $.each($("#stagesList option:selected"), function(key, stage) {
+        console.log(stage);
+        stageNames.push(stage.text);
+      });
+      if(stageNames.length >1) {
+        playlistName += " (" + stageNames.slice(0, -1).join(", ");
+        playlistName += " & " + stageNames.slice(-1) + ")";
+      } else
+      {
+        playlistName += " (" + stageNames[0] + ")";
+      }
+
+      SpotifyProxy.savePlaylist(playlistName);
+    });
 }
 
 $(document).ready( initPage() );

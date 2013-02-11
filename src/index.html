@@ -33,21 +33,23 @@
       <h1>festival playlists</h1>  
     </div>
 
+    <div class="offlineContainer">
+      <h1>Festival Playlists does not work in offline mode</h1>
+      <h2>Please check your connection / disabled offline mode</h1>
+    </div>
+
     <div class="container">
 
-      <div class="festivals">
+      <div class="festivals box">
         <h2>Select a festival ...</h2>
         <p>
           <select id="festivalsList">
             <option label="Select a festival">
-            <option label="Lorem 2010">
-            <option label="Lorem 2013">
-            <option label="Lorem 2014">
           </select>
         </p>
       </div>
 
-      <div class="stages">
+      <div class="stages box">
         <h2>... and stages, to generate ...</h2>
         <p>
           <select id="stagesList" multiple>
@@ -57,16 +59,13 @@
      </div>
 
 
-      <div class="playlists">
-        <h2>... a playlist!</h2>
+      <div class="playlists box">
+        <h2>... your festival playlist!</h2>
 
+        <div id="playerNode"></div>
         <div id="playlistContainer" class="playlistContainer">
+          <button class="add-playlist button icon" id="addPlaylist"><span class="plus"></span>Add as Playlist</button><br />
           <div id="playlistNode"></div>
-        
-          <h2>... save it?</h2>
-          <button class="add-playlist button icon" value="spotify:album:0fqSVcXza5It71LS2BJdLR"><span class="plus"></span>Add as Playlist</button><br />
-          <h2>... or play it?</h2>
-          <a id="playPlaylist" class="btn">play in spotify now?</a>
         </div>
       </div>
     </div>

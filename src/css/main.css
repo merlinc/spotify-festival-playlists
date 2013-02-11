@@ -1,18 +1,37 @@
-.navbar .navbar-inner {
-}
-
-.navbar .container .brand {
-  color: #ff0000;
-}
-
 html {
-  background-image: url('/assets/old_mathematics.png');
+  background-image: url('/assets/gplaypattern.png');
 }
 
 body {
   background: transparent;
 }
 
+div, h1, h2 {
+  font-family: "Helvetica";
+}
+
+.offlineContainer {
+  margin: 0 auto;
+  width: 640px;
+  display:none;
+}
+
+.offlineContainer > h1 {
+  margin-top: 40px;
+  font-size: 22px;
+  text-shadow: 0px 1px 1px #4d4d4d;
+  color: #222;
+}
+
+
+.offlineContainer > h2 {
+  font-size: 18px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 640px;
+}
 
 .brandbar {
   background-image: url('/assets/header.jpg');
@@ -23,49 +42,104 @@ body {
   display: inline-block;
   padding-top: 10px;
   font-size: 30px;
+  color: #e2e2e2;
+  text-shadow: 0px 1px 1px #4d4d4d;
 }
 
 #stagesList {
   width: 200px;
   height: 100px;
 }
+
 .festivals {
-  width: 300px;
+  width: 200px;
   display: inline-block;
   vertical-align: top;
-  background-color: #ffffff;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
-  box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
   padding: 10px;
+  height: 135px;
+}
+
+.festivals select {
+  width: 80%;
 }
 
 .stages {
-  width: 400px;
+  width: 350px;
   display: inline-block;
-  background-color: #ffffff;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
-  box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
   padding: 10px;
+  height: 135px;
 }
 
 .playlists {
-  margin-top: 20px;
-  width: 700px;
-  background-color: #ffffff;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
-  box-shadow: 3px 5px 5px 5px rgba(1, 1, 1, 0.3);
-  padding: 10px;
+  margin: 0 auto;
+  width: 600px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 22px;
 }
+
+
+#playerNode {
+  display: inline-block;
+}
+
+h2 {
+text-shadow: 0px 1px 1px #4d4d4d;
+color: #222;
+}
+
+#addPlaylist {
+  float:right;
+  margin-bottom: 5px;
+  display: none;
+}
+
+
+.box{
+    background:#a9db80;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(#a9db80,0),color-stop(#96c56f,1));
+    background:-webkit-linear-gradient(top, #a9db80 0%, #96c56f 100%);
+    background:-o-linear-gradient(top, #a9db80 0%, #96c56f 100%);
+    background:linear-gradient(top, #a9db80 0%, #96c56f 100%);
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom: 10px;
+    display:inline-block;
+    position:relative;
+    border:1px solid #a5a5a5;
+    box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    
+    clear:both;
+    margin:10px 10px;
+    padding: 10px;
+    -webkit-transition:box-shadow 0.3s ease-in-out;
+    transition:box-shadow 0.3s ease-in-out;   
+
+ background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(229,229,229,0.5) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(229,229,229,0.5))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(229,229,229,0.5) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(229,229,229,0.5) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(229,229,229,0.5) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(229,229,229,0.5) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+
+.brandbar {
+    width: 300px;
+    margin: 0 auto;
+
+    box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius:0px 0px 4px 4px;
+    transition:box-shadow 0.3s ease-in-out;   
+}
+
+/* Spotify overrides */
 
 .sp-list {
   width: 600px;
@@ -79,7 +153,7 @@ h2 {
 .sp-track-field-artist { width: 150px; }
 .sp-track-field-popularity { width: 40px; }
 
-/* overriding eve.css */
+/* overriding adam/eve.css */
 .sp-list a > :nth-child(2) {
 width: 250px;
 }
