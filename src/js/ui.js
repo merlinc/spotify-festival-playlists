@@ -1,7 +1,8 @@
 //Inside b.js:
-define(['jquery', 'spotifyDesktop'], function(jquery, spotifyDesktop) {
+require(['js/jquery', 'js/spotifyDesktop'], function(jquery, spotifyDesktop) {
 
     var spotifyProxy = spotifyDesktop;
+    var dataURL;
 
     // disable dragging of images
     $('img').bind('dragstart', function(event) { event.preventDefault(); });

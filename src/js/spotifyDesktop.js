@@ -1,12 +1,13 @@
+//['$api/models', '$views/image#Image'], function(models, Image)
 //Inside b.js:
-define(['jquery'], function(jquery) {
-
+require(['js/jquery','$api/models', '$api/search#Search', '$views/list#List'], function(jquery,Models, Search, List) {
+/*
     var sp = getSpotifyApi(1);
     var models = sp.require('sp://import/scripts/api/models');
     var views = sp.require("sp://import/scripts/api/views");
     var ui = sp.require('$util/dnd');
-
-    var search;
+*/
+    var currentSearch;
     var standardSearchParameters = {"pageSize":3, "searchArtists":false, "searchTracks": true, "searchAlbums":false};
     var searchingArtist;
     var artistsData;
@@ -16,20 +17,30 @@ define(['jquery'], function(jquery) {
       searchingArtist = artistsData.shift();
 
       if(searchingArtist) {
-
-          search = new models.Search('artist:"' + searchingArtist + '"', standardSearchParameters);
-          search.localResults = models.LOCALSEARCHRESULTS.APPEND;
+/*
+        require(['$api/models'], function(models) {
+  var maxItems = 5,
+      album = models.Album.fromURI('spotify:album:0hljn4caZCf6xPILpLDJkB');
+  album.load('tracks', 'artists').done(function(a) {
+    a.tracks.snapshot(0, maxItems).done(function(snapshot) {
+      for (var i = 0, l = Math.min(snapshot.length, maxItems); i < l; i++) {
+        var track = snapshot.get(i);
+        console.log(track.artists[0].uri, track.uri);
+    }).fail(function(){
+        console.error('Error retrieving snapshot');
+    });
+  }).fail(function(){
+      console.error('Error retrieving album information');
+  });
+});
+*/
+          currentSearch = Search.search(searchingArtist);//standardSearchParameters);
+//          currentSearch.localResults = models.LOCALSEARCHRESULTS.APPEND;
      
-          var searchHTML = document.getElementById('search');
-
-          search.observe(models.EVENT.CHANGE, function() {
+          currentSearch.tracks.snapshot(0,3).done(function(tracks) {
               console.log("Found: " + searchingArtist + "");
 
-              foundTracks = foundTracks.concat(search.tracks.slice(0));
-
-              search.tracks.forEach(function(track) {
-  //              workingPlaylist.add(track);
-              });
+              foundTracks = foundTracks.concat(tracks.toArray());
 
               if(artistsData.length){
                 runSearch();
@@ -37,39 +48,33 @@ define(['jquery'], function(jquery) {
                 displayResults();
               }
           });
-
-          search.observe(models.EVENT.LOAD_ERROR, function() {
+/*
+          currentSearch.observe(models.EVENT.LOAD_ERROR, function() {
             console.error("Not found:", searchingArtist);
             if(artistsData.length) {
                   runSearch();
               }
           });
-
-          // Actually runs the search
-          search.appendNext();
+*/
       }
   };
 
   var displayResults = function() {
 
-    var pl = createPlaylist(foundTracks);
-//    var pl = models.Playlist.fromURI("spotify:user:m3rlinc:playlist:6i9Hqmj8DIIJFP3KhDm1Cx");
-    var list = new views.List(pl, function (track) {
-    return new views.Track(track, views.Track.FIELD.STAR |
-                views.Track.FIELD.NAME |
-                views.Track.FIELD.ARTIST |
-                views.Track.FIELD.DURATION |
-                views.Track.FIELD.POPULARITY);
+    Models.Playlist.createTemporary().done(function(tempPlaylist) {
+      tempPlaylist.load('name', 'tracks').done(function(loadedPlaylist) {
+        loadedPlaylist.tracks.add(foundTracks).done(function(playlistWithTracks) {
+          //Models.Playlist.fromURIs(foundTracks);
+          var list = List.forPlaylist(playlistWithTracks, {"fields":['nowplaying', 'star', 'track', 'artist', 'time', 'popularity'], "unplayable": "disabled", "throbber": "hide-content"});
+
+          $("#playlistNode").empty();
+          $("#playlistNode").append(list.node);
+
+          list.init();
+        });
+      });
+      
     });
-
-
-    var player = new views.Player();
-    player.context = pl;
-     $('#addPlaylist').show();
-    //$("#playerNode").empty();
-    //$("#playerNode").append(player.node);
-    $("#playlistNode").empty();
-    $("#playlistNode").append(list.node);
 
   };
    
@@ -83,9 +88,9 @@ define(['jquery'], function(jquery) {
       var newFestivalPlaylist;
 
       if(name) {
-          newFestivalPlaylist = new models.Playlist(name);
+          newFestivalPlaylist = Models.Playlist(name);
       } else {
-          newFestivalPlaylist = new models.Playlist();
+          newFestivalPlaylist = Models.Playlist();
       }
       $.each(playlistTracks, function(index, value) { newFestivalPlaylist.add(value);});
 
@@ -106,13 +111,16 @@ define(['jquery'], function(jquery) {
       }
   };
 
-  applyOnlineOffline();
-  models.session.observe(models.EVENT.STATECHANGED, applyOnlineOffline);
+  //applyOnlineOffline();
+  //models.session.observe(models.EVENT.STATECHANGED, applyOnlineOffline);
    
     // Return the object that is assigned to Module
-    return {
-        startSearch: startSearch,
-        savePlaylist: savePlaylist
-    };
+//    return {
+//        startSearch: startSearch,
+//        savePlaylist: savePlaylist
+//    };
+
+  exports.startSearch = startSearch;
+  exports.savePlaylist = savePlaylist;
 
 });

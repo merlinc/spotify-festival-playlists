@@ -12,8 +12,7 @@
      },
     "BundleIdentifier": "festival-playlists",
     "BundleType": "Application",
-    "BundleVersion": "0.0.3",
-    "RequiredInterface": 1,
+    "BundleVersion": "0.0.4",
     "RequiredPermissions": [
         "http://festivalplaylists.com"
     ],
@@ -22,8 +21,7 @@
     ],
     "VendorIdentifier": "com.festivalplaylists",
     "Dependencies": {
-        "api": "0.1.0",
-        "resources": "0.1.0",
-        "util": "0.1.0"
+        "api": "1.0.0",
+        "views": "1.0.0"
     }
 }
