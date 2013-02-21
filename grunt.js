@@ -40,17 +40,8 @@ module.exports = function (grunt) {
 
           },
           appJS: {
-            files: [{'<%= distdir%>/js/': 'src/js/app.js'},
-                    {'<%= distdir%>/js/': 'src/js/spotifyDesktop.js'},
-                    {'<%= distdir%>/js/': 'src/js/ui.js'}
+            files: [{'<%= distdir%>/js/': 'src/js/**/*.js'}
             ]
-          },
-          bootstrapcss: {
-            files:[{'<%= distdir %>/css/': 'vendor/bootstrap/css/bootstrap.css'},
-                    {'<%= distdir %>/css/': 'vendor/bootstrap/css/bootstrap-responsive.css'}]
-          },
-          bootstrapjs: {
-            files: {'<%= distdir %>/js/': 'vendor/bootstrap/js/bootstrap.js'}
           }
         },
         concat:{
