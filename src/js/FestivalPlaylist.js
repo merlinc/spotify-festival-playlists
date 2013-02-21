@@ -91,38 +91,19 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
       throbber: 'hide-content'
     };
 
-    this.runSearch = function runSearch() {
-      var searchingArtist = artistsData.shift();
-
-      var currentSearch;
-
-      if(searchingArtist) {
-        currentSearch = Search.Search.search(searchingArtist);
-        currentSearch.tracks.snapshot(0,MAX_SONGS).done(function(tracks) {
-            console.log("Found: " + searchingArtist + "");
-
-            foundTracks = foundTracks.concat(tracks.toArray());
-
-            if(artistsData.length){
-              runSearch();
-            } else {
-              searchingCallback(foundTracks);
-            }
-        })
-        .fail(function() {
-          console.error("Error retrieving tracks for", searchingArtist);
-        });
-      }
-    };
-
     this.startSearch = function startSearch(bands, callback) {
       console.log(bands);
 
-      artistsData = bands.slice();
-      foundTracks = [];
-      searchingCallback = callback;
+      var savedTracks = [];
+      var promises = [];
 
-      this.runSearch();
+      bands.forEach(function(band) { promises.push( Search.Search.search(band).tracks.snapshot(0,3) ); });
+
+      Models.Promise.join(promises)
+          .each(function(snapshot) { console.log("Results:", snapshot.toArray()); savedTracks = savedTracks.concat(snapshot.toArray());}) //snapshot.loadAll('name').done( function(loadedTracks) { console.log("Loaded:",loadedTracks.length); tracks.concat(loadedTracks.slice());});})
+          .done(function(tracks) { console.log("Tracks:", savedTracks); })
+          .fail(function(tracks) { console.log('Failed to load at least one track.', tracks); })
+          .always(function(tracks) { console.log("Completed"); callback(savedTracks);});
     };
 
     this.createPlaylistFromTracks = function createPlaylistFromTracks(tracks, callback) {
