@@ -87,8 +87,7 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
     var PLAYLIST_SETTINGS = {
       height: 'fixed',
       fields: ['nowplaying', 'star', 'track', 'artist', 'time', 'album', 'popularity'],
-      style: 'rounded',
-      throbber: 'hide-content'
+      style: 'rounded'
     };
 
     this.startSearch = function startSearch(bands, callback) {
@@ -97,35 +96,85 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
       var savedTracks = [];
       var promises = [];
 
-      bands.forEach(function(band) { promises.push( Search.Search.search(band).tracks.snapshot(0,3) ); });
+      // Using the snapshot of the search, create a number of promises to resolve into search results
 
+      bands.forEach(function(band) { promises.push( Search.Search.search(band).tracks.snapshot(0,MAX_SONGS) ); });
+
+      // Fulfil the promises, and add the results into the save tracks storate
       Models.Promise.join(promises)
-          .each(function(snapshot) { console.log("Results:", snapshot.toArray()); savedTracks = savedTracks.concat(snapshot.toArray());}) //snapshot.loadAll('name').done( function(loadedTracks) { console.log("Loaded:",loadedTracks.length); tracks.concat(loadedTracks.slice());});})
-          .done(function(tracks) { console.log("Tracks:", savedTracks); })
+          .each(function(snapshot) { savedTracks = savedTracks.concat(snapshot.toArray());}) //snapshot.loadAll('name').done( function(loadedTracks) { console.log("Loaded:",loadedTracks.length); tracks.concat(loadedTracks.slice());});})
+          .done(function(tracks) {  })
           .fail(function(tracks) { console.log('Failed to load at least one track.', tracks); })
-          .always(function(tracks) { console.log("Completed"); callback(savedTracks);});
+          .always(function(tracks) { console.log("Found:", savedTracks.length); callback(savedTracks);});
+    };
+
+    this.getEmptyPlaylist = function getEmptyPlaylist() {
+      var returnPlaylist;
+      var playlistPromise = new Models.Promise();
+
+      Models.Playlist.createTemporary()
+        .done(
+          function(tempPlaylist) {
+            console.log("Created temporary:", tempPlaylist);
+            returnPlaylist = tempPlaylist;
+            return tempPlaylist.load('name', 'tracks', 'subscribed');
+          })
+        .done(
+          function(loadedPlaylistToClear){
+            console.log("Loaded temporary:", loadedPlaylistToClear);
+           return loadedPlaylistToClear.tracks.clear();
+          })
+        .done(
+          function(clearedPlaylist) {
+            console.log("Returning temporary:", clearedPlaylist);
+            console.log("Returning:", returnPlaylist);
+            playlistPromise.setDone(returnPlaylist);
+          }
+        ).fail(
+          function(fail) {
+          playlistPromise.setFail();
+          }
+        );
+
+
+      return playlistPromise;
+
+     
+
+  
     };
 
     this.createPlaylistFromTracks = function createPlaylistFromTracks(tracks, callback) {
-      Models.Playlist.create(Math.random())
-        .done(function(tempPlaylist) {
-          tempPlaylist.load('name', 'tracks', 'subscribed');
+      var returnPlaylist;
+      this.getEmptyPlaylist().done(
+        function(workingPlaylist) {
+          console.log("Working Playlist", workingPlaylist);
+          return workingPlaylist.load('name', 'tracks', 'subscribed');
         })
-        .done(function(loadedPlaylist) {
-          loadedPlaylist.tracks.add(foundTracks)
-        .done(function(playlistWithTracks) {
-          callback(loadedPlaylist);
+      .done(
+        function(loadedPlaylist) {
+          console.log("Loaded Playlist", loadedPlaylist);
+          returnPlaylist = loadedPlaylist;
+          return loadedPlaylist.tracks.add(tracks);
+        })
+      .done(
+        function(playlistWithTracks) {
+          console.log("Playlist Tracks", playlistWithTracks);
+          callback(returnPlaylist); // playlistWithTracks is a collection
         });
-        });
-      };
+    };
 
       this.createGridFromPlaylist = function createGridFromPlaylist(playlist, gridList, callback) {
+        console.log("Playlist:", playlist, "Gridlist:", gridList);
         var generatedList;
 
         if(gridList) {
+          console.log("Refreshing");
           generatedList = gridList;
-          generatedList.setItem(playlist);
+//          generatedList.setItem(playlist.snapshot());
+          generatedList.refresh();
         } else {
+          console.log("Creating");
           generatedList = List.List.forPlaylist(playlist, PLAYLIST_SETTINGS);
         }
 

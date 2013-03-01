@@ -49,6 +49,7 @@ function   ($models, FestivalPlaylist) {
       
       spotifyProxy.startSearch(artists.slice().sort(), function(spotifyBands) {
         spotifyProxy.createPlaylistFromTracks(spotifyBands, function(playlist) {
+          console.log("Playlist created:", playlist);
             // bandList is undefined the 1st time around
             if(bandList) {
               spotifyProxy.createGridFromPlaylist(playlist, bandList, function(gridList) {
