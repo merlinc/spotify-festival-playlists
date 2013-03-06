@@ -9,30 +9,24 @@ function   ($models, FestivalPlaylist) {
   
   // Load festivals by default
   festivals.loadNames(function updateFestivals(data){
-      var festivalNames = [];
-      festivalNames.push('<option value="">Select a festival</option>');
+      
+      $('#festivalsList').empty();
 
       $.each(data, function(key, val) {
-        festivalNames.push('<option value="' + val.id + '">' + val.name + '</option>');
+        $('#festivalsList').append('<li><label><input type="radio" name="festivalRadio" value="' + val.id + '"/>' + val.name + '</label></li>').fadeIn();
       });
-    
-     $('#festivalsList').empty().append(festivalNames);
     });
 
 
   // Load stages when UI triggered
   $("#festivalsList").change(function() {
-    var dataURL = $('#festivalsList option:selected').val();
+    var dataURL = $('#festivalsList input:radio:checked').val();
     festivals.loadStages(dataURL, function(data) {
-      var stageItems = [];
-      var element;
+      $('#stagesList').empty();
+
       $.each(data, function(key, val) {
-        element = $('<option value="' + val.id + '">' + val.name + '</option>');
-        element.data(val.events);
-        stageItems.push(element);
+        $('#stagesList').append('<li><label><input type="checkbox" name="stageRadio" value="' + val.id + '"/>' + val.name + '</label></li>').fadeIn();
       });
-     
-     $('#stagesList').empty().append(stageItems);
     });
   });
 
@@ -40,7 +34,7 @@ function   ($models, FestivalPlaylist) {
   // Load bands, and feed into spotify search when UI triggered
   $("#stagesList").change(function() {
     var stagesData = [];
-    $.each($("#stagesList option:selected"), function(key, stage) {
+    $.each($("#stagesList input:checkbox:checked"), function(key, stage) {
       console.log(stage);
       stagesData.push($(stage).val());
     });
