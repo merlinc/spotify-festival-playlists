@@ -1,0 +1,58 @@
+[
+  {
+      "name":"The Great Stage",
+      "events":[
+        {"name":"Django Django", "action": "added", "date": 20130101},
+        {"name":"Soulwax", "action": "removed", "date": 20130131}
+      ]
+    },
+        {
+      "name":"Temple of Boom",
+      "events":[
+
+        {"name":"Eddy Temple Morris", "action": "added", "date": 20130101},
+        {"name":"Embrace (DJ set)", "action": "added", "date": 20130101},
+        {"name":"Evil Nine", "action": "added", "date": 20130101},
+        {"name":"Foamo", "action": "added", "date": 20130101},
+        {"name":"James Lavelle", "action": "added", "date": 20130101},
+        {"name":"Josh Butler", "action": "added", "date": 20130101},
+        {"name":"Loadstar", "action": "added", "date": 20130101},
+        {"name":"Never Say Die AllStars", "action": "added", "date": 20130101},
+        {"name":"The Correspondents", "action": "added", "date": 20130101},
+        {"name":"The Other Tribe", "action": "added", "date": 20130101},
+        {"name":"Wilkinson", "action": "added", "date": 20130101}
+      ]
+    },
+    {
+      "name":"Unknown",
+      "events":[
+        {"name":"The Strypes", "action": "added", "date": 20130101},
+        {"name":"Bastille", "action": "added", "date": 20130101},
+        {"name":"Annie Eve", "action": "added", "date": 20130101},
+        {"name":"Ava Leigh", "action": "added", "date": 20130101},
+        {"name":"Ben Caplan", "action": "added", "date": 20130101},
+        {"name":"Big Boy Bloater", "action": "added", "date": 20130101},
+        {"name":"Big Youth", "action": "added", "date": 20130101},
+        {"name":"Blackbombers", "action": "added", "date": 20130101},
+        {"name":"Childhood", "action": "added", "date": 20130101},
+        {"name":"Dan Croll", "action": "added", "date": 20130101},
+        {"name":"David Rodigan", "action": "added", "date": 20130101},
+        {"name":"Deep Sea Arcade", "action": "added", "date": 20130101},
+        {"name":"Eliza and The Bear", "action": "added", "date": 20130101},
+        {"name":"Findlay", "action": "added", "date": 20130101},
+        {"name":"Lee Fields & The Expressions", "action": "added", "date": 20130101},
+        {"name":"Mo", "action": "added", "date": 20130101},
+        {"name":"Public Service Broadcasting", "action": "added", "date": 20130101},
+        {"name":"Roo Panes", "action": "added", "date": 20130101},
+        {"name":"Skip 'Little Axe' McDonald", "action": "added", "date": 20130101},
+        {"name":"Son Of Dave", "action": "added", "date": 20130101},
+        {"name":"Steve Hooker", "action": "added", "date": 20130101},
+        {"name":"The Family Rain", "action": "added", "date": 20130101},
+        {"name":"The Ladykillers", "action": "added", "date": 20130101},
+        {"name":"Treetop Flyers", "action": "added", "date": 20130101},
+        {"name":"Winston Francis", "action": "added", "date": 20130101},
+        {"name":"Wolf Alice", "action": "added", "date": 20130101},
+        {"name":"ElectroBlues", "action": "added", "date": 20130101}
+      ]
+    }
+]
