@@ -1,6 +1,6 @@
 require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/buttons'], function(jQuery,Models, Search, List, Buttons) {
 
-  var Festivals = function(){
+  var DataProxy = function(){
 
     var festivalName;
     var festivalData;
@@ -185,7 +185,7 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
 
 
 
-  exports.Festivals = Festivals;
+  exports.DataProxy = DataProxy;
   exports.SpotifyProxy = SpotifyProxy;
 
 });

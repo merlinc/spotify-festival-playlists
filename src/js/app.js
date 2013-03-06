@@ -3,12 +3,12 @@ require(['$api/models', 'js/FestivalPlaylist'],
 function   ($models, FestivalPlaylist) {
   console.log("loaded");
 
-  var festivals = new FestivalPlaylist.Festivals();
+  var dataProxy = new FestivalPlaylist.DataProxy();
   var spotifyProxy = new FestivalPlaylist.SpotifyProxy();
   var bandList;
   
   // Load festivals by default
-  festivals.loadNames(function updateFestivals(data){
+  dataProxy.loadNames(function updateFestivals(data){
       
       $('#festivalsList').empty();
 
@@ -21,7 +21,7 @@ function   ($models, FestivalPlaylist) {
   // Load stages when UI triggered
   $("#festivalsList").change(function() {
     var dataURL = $('#festivalsList input:radio:checked').val();
-    festivals.loadStages(dataURL, function(data) {
+    dataProxy.loadStages(dataURL, function(data) {
       $('#stagesList').empty();
 
       $.each(data, function(key, val) {
@@ -39,7 +39,7 @@ function   ($models, FestivalPlaylist) {
       stagesData.push($(stage).val());
     });
 
-    festivals.loadBands(stagesData, function(artists) {
+    dataProxy.loadBands(stagesData, function(artists) {
       
       spotifyProxy.startSearch(artists.slice().sort(), function(spotifyBands) {
         spotifyProxy.createPlaylistFromTracks(spotifyBands, function(playlist) {
