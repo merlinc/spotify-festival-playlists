@@ -3,5 +3,6 @@
   {"festival":"Glastonbury 2010", "data":"glastonbury2010.json"},
   {"festival":"Secret Garden Party 2012", "data":"sgp2012.json"},
   {"festival":"Secret Garden Party 2013", "data":"sgp2013.json"},
-  {"festival":"Boomtown Fair 2013", "data":"boomtown2013.json"}
+  {"festival":"Boomtown Fair 2013", "data":"boomtown2013.json"},
+  {"festival":"Bloodstock 2013", "data":"bloodstock2013.json"}
 ]
