@@ -100,29 +100,47 @@ ul {
   float: left;
 }
 
-#festivalsList input[type="radio"] {
-    display:none;
+input[type="radio"], input[type="checkbox"] {
+    position: absolute;
+    width:18px;
+    height:18px;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    opacity:0;
 }
 
-#festivalsList input[type="radio"] + label span {
+input[type="radio"] + label:before, input[type="checkbox"] + label:before {
     display:inline-block;
-    width:19px;
-    height:19px;
+    width:18px;
+    height:18px;
     margin:-1px 4px 0 0;
     vertical-align:middle;
-    background:url('/assets/check_radio_sheet.png') -38px top no-repeat;
     cursor:pointer;
-}
-#festivalsList  input[type="radio"]:checked + label span {
-    background:url('/assets/check_radio_sheet.png') -57px top no-repeat;
+    content: " ";
 }
 
-
-/*
-label input[type="checkbox"]:checked +  span {
-    background:url(check_radio_sheet.png) -19px top no-repeat;
+input[type="radio"] + label:before {
+    background:url('/assets/sprite-radio-checkbox.png') left top no-repeat;
+    content: " ";
 }
-*/
+
+input[type="radio"]:checked + label:before {
+    background:url('/assets/sprite-radio-checkbox.png') -18px top no-repeat;
+    content: " ";
+}
+
+input[type="checkbox"] + label:before {
+    background:url('/assets/sprite-radio-checkbox.png') -36px top no-repeat;
+    content: " ";
+}
+
+input[type="checkbox"]:checked + label:before {
+    background:url('/assets/sprite-radio-checkbox.png') -54px top no-repeat;
+    content: " ";
+}
 
 /* stages box */
 .stages {
@@ -151,23 +169,6 @@ label input[type="checkbox"]:checked +  span {
 #stagesList li:nth-child(3n) {
   width:30%;
   float: left;
-}
-
-#stagesList input[type="checkbox"] {
-    display:none;
-}
-
-#stagesList input[type="checkbox"] + label span {
-    display:inline-block;
-    width:19px;
-    height:19px;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
-    background:url('/assets/check_radio_sheet.png') left top no-repeat;
-    cursor:pointer;
-}
-#stagesList  input[type="checkbox"]:checked + label span {
-    background:url('/assets/check_radio_sheet.png') -19px top no-repeat;
 }
 
 

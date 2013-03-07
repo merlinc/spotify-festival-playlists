@@ -13,7 +13,7 @@ function   ($models, FestivalPlaylist) {
       $('#festivalsList').empty();
 
       $.each(data, function(key, val) {
-        $('#festivalsList').append('<li><label><input type="radio" name="festivalRadio" value="' + val.id + '"/>' + val.name + '</label></li>').fadeIn();
+        $('#festivalsList').append('<li><input type="radio" id="' + val.id + '" name="festivalRadio" value="' + val.id + '"></input><label for="' + val.id + '"><span/>' + val.name + '</label></li>').fadeIn();
       });
     });
 
@@ -25,7 +25,7 @@ function   ($models, FestivalPlaylist) {
       $('#stagesList').empty();
 
       $.each(data, function(key, val) {
-        $('#stagesList').append('<li><label><input type="checkbox" name="stageRadio" value="' + val.id + '"/>' + val.name + '</label></li>').fadeIn();
+        $('#stagesList').append('<li><input type="checkbox" id="' + val.id + '"name="stageRadio" value="' + val.id + '"></input><label for="' + val.id + '"><span/>' + val.name + '</label></li>').fadeIn();
       });
     });
   });
