@@ -94,11 +94,11 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
 
       // Using the snapshot of the search, create a number of promises to resolve into search results
 
-      bands.forEach(function(band) { promises.push( Search.Search.search(band).tracks.snapshot(0,MAX_SONGS) ); });
+      bands.forEach(function(band) { promises.push( Search.Search.search('artist:"' + band + '"').tracks.snapshot(0,MAX_SONGS) ); });
 
       // Fulfil the promises, and add the results into the save tracks storate
       Models.Promise.join(promises)
-          .each(function(snapshot) { savedTracks = savedTracks.concat(snapshot.toArray());})
+          .each(function(snapshot) { var snapshotResult = snapshot.toArray(); if(snapshotResult.length === 0) {console.log('Failed to find', snapshot._collection._args);} else {savedTracks = savedTracks.concat(snapshotResult);}})
           .done(function(tracks) {  })
           .fail(function(tracks) { console.log('Failed to load at least one track.', tracks); })
           .always(function(tracks) { callback(savedTracks);});
