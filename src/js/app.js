@@ -1,7 +1,6 @@
 // Start the main app logic.
 require(['$api/models', 'js/FestivalPlaylist'],
 function   ($models, FestivalPlaylist) {
-  console.log("loaded");
 
   var dataProxy = new FestivalPlaylist.DataProxy();
   var spotifyProxy = new FestivalPlaylist.SpotifyProxy();
@@ -39,7 +38,6 @@ function   ($models, FestivalPlaylist) {
       
       spotifyProxy.startSearch(artists.slice().sort(), function(spotifyBands) {
         spotifyProxy.createPlaylistFromTracks(spotifyBands, function(playlist) {
-          console.log("Playlist created:", playlist);
             // bandList is undefined the 1st time around
             if(bandList) {
                 spotifyProxy.createGridFromPlaylist(playlist, bandList, function(gridList) {
@@ -57,7 +55,7 @@ function   ($models, FestivalPlaylist) {
               $(button.node).click(function() {
                 var festivalName = $('#festivalsList input:radio:checked + label').text();
 
-                var stageNames = $.map( $("#stagesList input:checkbox:checked + label"), function (element) { console.log(element); return $(element).text(); });
+                var stageNames = $.map( $("#stagesList input:checkbox:checked + label"), function (element) { return $(element).text(); });
                 var playlistName = "Festival Playlists - " + festivalName + " (" + stageNames.join(", ") + ")";
                 var playlistDescription = 'Festival Playlists - generated playlist for ' + festivalName + ' (' + stageNames.join(', ') + ')';
 

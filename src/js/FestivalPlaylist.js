@@ -19,7 +19,6 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
     };
 
     this.loadStages = function loadStages(festival, callback) {
-
       festivalName = festival;
 
       var dataURL = 'data/' + festival;
@@ -42,7 +41,6 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
     this.loadBands = function loadBands(stages, callback) {
       var artistsData = [];
 
-      console.log(stageData[stages]);
       $.each(stages, function(key, stage) {
         $.each(stageData[stage], function(key, band) {
           artistsData.push(band.name);
@@ -78,7 +76,6 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
       return loadedSession;
     });
 
-
     var artistsData;
     var foundTracks;
     var searchingCallback;
@@ -91,7 +88,6 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
     };
 
     this.startSearch = function startSearch(bands, callback) {
-      console.log(bands);
 
       var savedTracks = [];
       var promises = [];
@@ -102,10 +98,10 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
 
       // Fulfil the promises, and add the results into the save tracks storate
       Models.Promise.join(promises)
-          .each(function(snapshot) { savedTracks = savedTracks.concat(snapshot.toArray());}) //snapshot.loadAll('name').done( function(loadedTracks) { console.log("Loaded:",loadedTracks.length); tracks.concat(loadedTracks.slice());});})
+          .each(function(snapshot) { savedTracks = savedTracks.concat(snapshot.toArray());})
           .done(function(tracks) {  })
           .fail(function(tracks) { console.log('Failed to load at least one track.', tracks); })
-          .always(function(tracks) { console.log("Found:", savedTracks.length); callback(savedTracks);});
+          .always(function(tracks) { callback(savedTracks);});
     };
 
     this.getEmptyPlaylist = function getEmptyPlaylist() {
@@ -115,19 +111,15 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
       Models.Playlist.createTemporary()
         .done(
           function(tempPlaylist) {
-            console.log("Created temporary:", tempPlaylist);
             returnPlaylist = tempPlaylist;
             return tempPlaylist.load('name', 'tracks', 'subscribed');
           })
         .done(
           function(loadedPlaylistToClear){
-            console.log("Loaded temporary:", loadedPlaylistToClear);
            return loadedPlaylistToClear.tracks.clear();
           })
         .done(
           function(clearedPlaylist) {
-            console.log("Returning temporary:", clearedPlaylist);
-            console.log("Returning:", returnPlaylist);
             playlistPromise.setDone(returnPlaylist);
           }
         ).fail(
@@ -144,32 +136,26 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
       var returnPlaylist;
       this.getEmptyPlaylist().done(
         function(workingPlaylist) {
-          console.log("Working Playlist", workingPlaylist);
           return workingPlaylist.load('name', 'tracks', 'subscribed');
         })
       .done(
         function(loadedPlaylist) {
-          console.log("Loaded Playlist", loadedPlaylist);
           returnPlaylist = loadedPlaylist;
           return loadedPlaylist.tracks.add(tracks);
         })
       .done(
         function(playlistWithTracks) {
-          console.log("Playlist Tracks", playlistWithTracks);
           callback(returnPlaylist); // playlistWithTracks is a collection
         });
     };
 
     this.createGridFromPlaylist = function createGridFromPlaylist(playlist, gridList, callback) {
-      console.log("Playlist:", playlist, "Gridlist:", gridList);
       var generatedList;
 
       if(gridList) {
-        console.log("Refreshing");
         generatedList = gridList;
         generatedList.refresh();
       } else {
-        console.log("Creating");
         generatedList = List.List.forPlaylist(playlist, PLAYLIST_SETTINGS);
       }
 
@@ -178,7 +164,6 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
 
     this.createSubscribeButtonFromPlaylist = function createSubscribeButtonFromPlaylist(playlist, callback) {
       var subscribeButton = Buttons.SubscribeButton.forPlaylist(playlist);
-      console.log("Subscribe Button:", subscribeButton);
 
       callback(subscribeButton);
     };
@@ -189,7 +174,6 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
 
       playlistToCopy.load('name','tracks')
         .done(function(playlist){
-          console.log(playlist);
           playlist.tracks.snapshot(0, 500).done(function(snapshot) {
             var len = Math.min(snapshot.length, 500);
             for (var i = 0; i < len; i++) {
@@ -197,52 +181,28 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
             }
           });});
 
-
       Models.Playlist.create(playlistName)
         .done(
           function(createdPlaylist) {
-            console.log("Created Playlist:", createdPlaylist.uri);
             return createdPlaylist.setDescription(playlistDescription);
           })
         .done(
           function(createdPlaylistWithDescription) {
-            console.log("Created:", createdPlaylistWithDescription.uri);
             return createdPlaylistWithDescription.load('name', 'tracks', 'subscribed');
           })
 
         .done(
             function(createdPlaylistToAddTo) {
-              console.log(createdPlaylistToAddTo.uri);
               return createdPlaylistToAddTo.tracks.add(playlistTracks);
             })
         .done(
           function(filledPlaylist) {
-            console.log("Filled", filledPlaylist.uri);
             filledPlaylist.subscribed = true;
           });
     };
   };
 
-
   exports.DataProxy = DataProxy;
   exports.SpotifyProxy = SpotifyProxy;
 
 });
-
-/*
-
-SpotiftyDesktop
-  .Festivals
-    .loadNames(, callback)
-    .loadStages(festival, callback)
-    .loadBands(festival, [stage], callback)
-  .Spotify
-    .search([band],callback)
-
-  .UIx
-    .updateFestivals([festival])
-    .updateStages([stage])
-    .updateBands([band])
-    .updatePlaylist(List)
-    .subscribeToPlaylist(List)
-*/
