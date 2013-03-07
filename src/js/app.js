@@ -33,11 +33,7 @@ function   ($models, FestivalPlaylist) {
 
   // Load bands, and feed into spotify search when UI triggered
   $("#stagesList").change(function() {
-    var stagesData = [];
-    $.each($("#stagesList input:checkbox:checked"), function(key, stage) {
-      console.log(stage);
-      stagesData.push($(stage).val());
-    });
+    var stagesData = $.map( $("#stagesList input:checkbox:checked"), function (element) { return $(element).val(); });
 
     dataProxy.loadBands(stagesData, function(artists) {
       
@@ -46,7 +42,7 @@ function   ($models, FestivalPlaylist) {
           console.log("Playlist created:", playlist);
             // bandList is undefined the 1st time around
             if(bandList) {
-              spotifyProxy.createGridFromPlaylist(playlist, bandList, function(gridList) {
+                spotifyProxy.createGridFromPlaylist(playlist, bandList, function(gridList) {
                 bandList = gridList;
               });
             } else {
@@ -56,6 +52,20 @@ function   ($models, FestivalPlaylist) {
                 bandList = gridList;
               });
             }
+
+            spotifyProxy.createSubscribeButtonFromPlaylist(playlist, function(button) {
+              $(button.node).click(function() {
+                var festivalName = $('#festivalsList input:radio:checked + label').text();
+
+                var stageNames = $.map( $("#stagesList input:checkbox:checked + label"), function (element) { console.log(element); return $(element).text(); });
+                var playlistName = "Festival Playlists - " + festivalName + " (" + stageNames.join(", ") + ")";
+                var playlistDescription = 'Festival Playlists - generated playlist for ' + festivalName + ' (' + stageNames.join(', ') + ')';
+
+                spotifyProxy.subscribeToPlaylist(playlist, playlistName, playlistDescription);
+              });
+
+            $("#playlistButton").empty().prepend(button.node);
+            });
           });
 //          spotifyProxy.createSubscribeButtonFromPlaylist(playlist);
       });

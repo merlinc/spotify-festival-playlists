@@ -138,10 +138,6 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
 
 
       return playlistPromise;
-
-     
-
-  
     };
 
     this.createPlaylistFromTracks = function createPlaylistFromTracks(tracks, callback) {
@@ -164,25 +160,68 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
         });
     };
 
-      this.createGridFromPlaylist = function createGridFromPlaylist(playlist, gridList, callback) {
-        console.log("Playlist:", playlist, "Gridlist:", gridList);
-        var generatedList;
+    this.createGridFromPlaylist = function createGridFromPlaylist(playlist, gridList, callback) {
+      console.log("Playlist:", playlist, "Gridlist:", gridList);
+      var generatedList;
 
-        if(gridList) {
-          console.log("Refreshing");
-          generatedList = gridList;
-//          generatedList.setItem(playlist.snapshot());
-          generatedList.refresh();
-        } else {
-          console.log("Creating");
-          generatedList = List.List.forPlaylist(playlist, PLAYLIST_SETTINGS);
-        }
+      if(gridList) {
+        console.log("Refreshing");
+        generatedList = gridList;
+        generatedList.refresh();
+      } else {
+        console.log("Creating");
+        generatedList = List.List.forPlaylist(playlist, PLAYLIST_SETTINGS);
+      }
 
-        callback(generatedList);
-      };
+      callback(generatedList);
     };
 
+    this.createSubscribeButtonFromPlaylist = function createSubscribeButtonFromPlaylist(playlist, callback) {
+      var subscribeButton = Buttons.SubscribeButton.forPlaylist(playlist);
+      console.log("Subscribe Button:", subscribeButton);
 
+      callback(subscribeButton);
+    };
+
+    this.subscribeToPlaylist = function subscribeToPlaylist(playlistToCopy, playlistName, playlistDescription) {
+
+      var playlistTracks = [];
+
+      playlistToCopy.load('name','tracks')
+        .done(function(playlist){
+          console.log(playlist);
+          playlist.tracks.snapshot(0, 500).done(function(snapshot) {
+            var len = Math.min(snapshot.length, 500);
+            for (var i = 0; i < len; i++) {
+              playlistTracks.push(snapshot.get(i));
+            }
+          });});
+
+
+      Models.Playlist.create(playlistName)
+        .done(
+          function(createdPlaylist) {
+            console.log("Created Playlist:", createdPlaylist.uri);
+            return createdPlaylist.setDescription(playlistDescription);
+          })
+        .done(
+          function(createdPlaylistWithDescription) {
+            console.log("Created:", createdPlaylistWithDescription.uri);
+            return createdPlaylistWithDescription.load('name', 'tracks', 'subscribed');
+          })
+
+        .done(
+            function(createdPlaylistToAddTo) {
+              console.log(createdPlaylistToAddTo.uri);
+              return createdPlaylistToAddTo.tracks.add(playlistTracks);
+            })
+        .done(
+          function(filledPlaylist) {
+            console.log("Filled", filledPlaylist.uri);
+            filledPlaylist.subscribed = true;
+          });
+    };
+  };
 
 
   exports.DataProxy = DataProxy;
