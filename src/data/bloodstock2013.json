@@ -16,9 +16,9 @@
         {"name":"Dying Fetus", "action": "added", "date":20130307},
         {"name":"Slayer", "action": "added", "date":20130307},
         {"name":"Anthrax", "action": "added", "date":20130307},
-        {"name":"Devil Driver", "action": "added", "date":20130307},
+        {"name":"DevilDriver", "action": "added", "date":20130307},
         {"name":"Exodus", "action": "added", "date":20130307},
-        {"name":"amporphis", "action": "added", "date":20130307},
+        {"name":"Amorphis", "action": "added", "date":20130307},
         {"name":"Fozzy", "action": "added", "date":20130307},
         {"name":"Belphegor", "action": "added", "date":20130307},
         {"name":"Whitechapel", "action": "added", "date":20130307}
@@ -45,7 +45,7 @@
         {"name":"Diesel King", "action": "added", "date": 20130307},
         {"name":"Amulet", "action": "added", "date": 20130307},
         {"name":"Merciless Terror", "action": "added", "date": 20130307},
-        {"name":"Negiligence", "action": "added", "date": 20130307}
+        {"name":"Negligence", "action": "added", "date": 20130307}
       ]
     }
 ]
