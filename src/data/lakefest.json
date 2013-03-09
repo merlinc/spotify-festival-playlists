@@ -1,0 +1,72 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Levellers"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "3 Daft Monkeys"
+   },
+   {
+    "name": "Arthur Brown"
+   },
+   {
+    "name": "Avert Francis"
+   },
+   {
+    "name": "Baka Beyond"
+   },
+   {
+    "name": "Chas & Dave"
+   },
+   {
+    "name": "Cosmo Jarvis"
+   },
+   {
+    "name": "Duke Special"
+   },
+   {
+    "name": "Erica"
+   },
+   {
+    "name": "Frazer Kennedy"
+   },
+   {
+    "name": "Funmilayo"
+   },
+   {
+    "name": "Gaz Brookfield"
+   },
+   {
+    "name": "Jim Lockey & The Solemn Sun"
+   },
+   {
+    "name": "Missing Andy"
+   },
+   {
+    "name": "Ocean Colour Scene"
+   },
+   {
+    "name": "Ruffanti"
+   },
+   {
+    "name": "The Beat"
+   },
+   {
+    "name": "The Chip Shop Boys"
+   },
+   {
+    "name": "The Roving Crows"
+   },
+   {
+    "name": "Wille and The Bandits"
+   }
+  ]
+ }
+]

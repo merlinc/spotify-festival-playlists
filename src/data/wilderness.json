@@ -1,0 +1,48 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Noah and the Whale"
+   },
+   {
+    "name": "Empire Of The Sun"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "Eliza and The Bear"
+   },
+   {
+    "name": "Ghostpoet"
+   },
+   {
+    "name": "King Krule"
+   },
+   {
+    "name": "Lucy Rose"
+   },
+   {
+    "name": "Matt Corby"
+   },
+   {
+    "name": "Melodys Echo Chamber"
+   },
+   {
+    "name": "Michael Kiwanuka"
+   },
+   {
+    "name": "Rodriguez"
+   },
+   {
+    "name": "Tom Odell"
+   },
+   {
+    "name": "Tribes"
+   }
+  ]
+ }
+]

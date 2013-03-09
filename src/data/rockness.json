@@ -1,0 +1,166 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Basement Jaxx"
+   },
+   {
+    "name": "Example"
+   },
+   {
+    "name": "Plan B"
+   },
+   {
+    "name": "Fatboy Slim"
+   }
+  ]
+ },
+ {
+  "name": "Sub Club Sound System",
+  "events": [
+   {
+    "name": "Sub Club"
+   },
+   {
+    "name": "Julio Bashmore"
+   },
+   {
+    "name": "Jessie Ware"
+   },
+   {
+    "name": "Jackmaster"
+   },
+   {
+    "name": "Harri & Domenic"
+   }
+  ]
+ },
+ {
+  "name": "Arcadia Afterburner",
+  "events": [
+   {
+    "name": "Soma Records"
+   },
+   {
+    "name": "Booka Shade"
+   },
+   {
+    "name": "Josh Wink"
+   },
+   {
+    "name": "Pan-Pot"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "Above & Beyond"
+   },
+   {
+    "name": "Alex Metric"
+   },
+   {
+    "name": "Animal Farm"
+   },
+   {
+    "name": "Ben Howard"
+   },
+   {
+    "name": "Benga"
+   },
+   {
+    "name": "Bombay Bicycle Club"
+   },
+   {
+    "name": "Camera Obscura"
+   },
+   {
+    "name": "Carl Craig"
+   },
+   {
+    "name": "Ellie Goulding"
+   },
+   {
+    "name": "Gary Beck"
+   },
+   {
+    "name": "Hans Bouffmyhre"
+   },
+   {
+    "name": "Harvey McKay"
+   },
+   {
+    "name": "Jaguar Skills"
+   },
+   {
+    "name": "Joris Voorn"
+   },
+   {
+    "name": "Len Faki"
+   },
+   {
+    "name": "Madeon"
+   },
+   {
+    "name": "Madness"
+   },
+   {
+    "name": "Mark Henning"
+   },
+   {
+    "name": "Mat Zo"
+   },
+   {
+    "name": "Netsky"
+   },
+   {
+    "name": "Newton Faulkner"
+   },
+   {
+    "name": "Nic Fanciulli"
+   },
+   {
+    "name": "Proxy"
+   },
+   {
+    "name": "Redlight"
+   },
+   {
+    "name": "Skream"
+   },
+   {
+    "name": "Steve Aoki"
+   },
+   {
+    "name": "The Futureheads"
+   },
+   {
+    "name": "The Maccabees"
+   },
+   {
+    "name": "The Temper Trap"
+   },
+   {
+    "name": "The Vaccines"
+   },
+   {
+    "name": "Alabama 3"
+   },
+   {
+    "name": "Disclosure"
+   },
+   {
+    "name": "SBTRKT"
+   },
+   {
+    "name": "The Knife"
+   },
+   {
+    "name": "Zane Lowe"
+   }
+  ]
+ }
+]

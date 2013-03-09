@@ -1,0 +1,338 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Snoop Dogg"
+   },
+   {
+    "name": "Elton John"
+   },
+   {
+    "name": "The Cuban Brothers"
+   },
+   {
+    "name": "Arcade Fire"
+   }
+  ]
+ },
+ {
+  "name": "DJs",
+  "events": [
+   {
+    "name": "A Love from Outer Space: Andrew Weatherall & Sean Johnston"
+   },
+   {
+    "name": "A-Yo! (Mark Ronson vs. Zane Lowe)"
+   },
+   {
+    "name": "Alexander Nut "
+   },
+   {
+    "name": "Annie Mac"
+   },
+   {
+    "name": "Bad Zuke"
+   },
+   {
+    "name": "Ben Pearce"
+   },
+   {
+    "name": "Ben UFO"
+   },
+   {
+    "name": "Bodhi"
+   },
+   {
+    "name": "Bondax"
+   },
+   {
+    "name": "Carl Cox"
+   },
+   {
+    "name": "Cashmere Cat"
+   },
+   {
+    "name": "Catz N Dogz"
+   },
+   {
+    "name": "Coley"
+   },
+   {
+    "name": "Crispin J. Glover"
+   },
+   {
+    "name": "Cyril Hahn"
+   },
+   {
+    "name": "Daniel P Carter"
+   },
+   {
+    "name": "Danny Byrd"
+   },
+   {
+    "name": "David Rodigan"
+   },
+   {
+    "name": "Dixon"
+   },
+   {
+    "name": "DJ Yoda"
+   },
+   {
+    "name": "Dollop"
+   },
+   {
+    "name": "Eats Everything"
+   },
+   {
+    "name": "Ed Rush"
+   },
+   {
+    "name": "Erol Alkan"
+   },
+   {
+    "name": "Fabio & Grooverider"
+   },
+   {
+    "name": "Fake Blood"
+   },
+   {
+    "name": "Fred V and Grafix"
+   },
+   {
+    "name": "Heidi"
+   },
+   {
+    "name": "High Contrast"
+   },
+   {
+    "name": "Hospitality"
+   },
+   {
+    "name": "Jackmaster"
+   },
+   {
+    "name": "Jesse Rose"
+   },
+   {
+    "name": "Joy Orbison"
+   },
+   {
+    "name": "Julio Bashmore"
+   },
+   {
+    "name": "Justin Robertson"
+   },
+   {
+    "name": "Kerri Chandler"
+   },
+   {
+    "name": "krankbrothers"
+   },
+   {
+    "name": "Kry Wolf"
+   },
+   {
+    "name": "Marcel Dettmann"
+   },
+   {
+    "name": "Maya Jane Coles"
+   },
+   {
+    "name": "MC Wrec & Dynamite MC"
+   },
+   {
+    "name": "My Love Is Underground"
+   },
+   {
+    "name": "Nu:Logic"
+   },
+   {
+    "name": "Redinho"
+   },
+   {
+    "name": "Redlight"
+   },
+   {
+    "name": "Richie Hawtin"
+   },
+   {
+    "name": "Rob da Bank"
+   },
+   {
+    "name": "Roska"
+   },
+   {
+    "name": "Rustie"
+   },
+   {
+    "name": "Seth Troxler"
+   },
+   {
+    "name": "Sophie"
+   },
+   {
+    "name": "Spencer"
+   },
+   {
+    "name": "The Daft Punk Tribute Night"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "MIA"
+   },
+   {
+    "name": "Franz Ferdinand"
+   },
+   {
+    "name": "The Flaming Lips"
+   },
+   {
+    "name": "Tom Odell"
+   },
+   {
+    "name": "The Knife"
+   },
+   {
+    "name": "Bombay Bicycle Club"
+   },
+   {
+    "name": "The Roots"
+   },
+   {
+    "name": "Belle & Sebastian"
+   },
+   {
+    "name": "Jessie Ware"
+   },
+   {
+    "name": "Disclosure"
+   },
+   {
+    "name": "Sinead O' Connor"
+   },
+   {
+    "name": "Chic featuring Nile Rodgers"
+   },
+   {
+    "name": "Squarepusher"
+   },
+   {
+    "name": "Hot Natured"
+   },
+   {
+    "name": "Angel Haze"
+   },
+   {
+    "name": "The Polyphonic Spree"
+   },
+   {
+    "name": "Johnny Marr"
+   },
+   {
+    "name": "Bastille"
+   },
+   {
+    "name": "Peace"
+   },
+   {
+    "name": "The Strypes"
+   },
+   {
+    "name": "DJ Fresh"
+   },
+   {
+    "name": "Rudimental"
+   },
+   {
+    "name": "Dexys"
+   },
+   {
+    "name": "The Walkmen"
+   },
+   {
+    "name": "John Cooper Clarke"
+   },
+   {
+    "name": "Lissie"
+   },
+   {
+    "name": "The Wonder Stuff"
+   },
+   {
+    "name": "Caravan Palace"
+   },
+   {
+    "name": "Matthew E. White"
+   },
+   {
+    "name": "While She Sleeps"
+   },
+   {
+    "name": "Merchandise"
+   },
+   {
+    "name": "Mikill Pane"
+   },
+   {
+    "name": "True Tiger"
+   },
+   {
+    "name": "Sexy Sushi"
+   },
+   {
+    "name": "Is Tropical"
+   },
+   {
+    "name": "Skaters"
+   },
+   {
+    "name": "Lulu James"
+   },
+   {
+    "name": "Swim Deep"
+   },
+   {
+    "name": "Drenge"
+   },
+   {
+    "name": "Jagwar Ma"
+   },
+   {
+    "name": "Fleetwood Bac"
+   },
+   {
+    "name": "Jaipur Brass Band"
+   },
+   {
+    "name": "Kawa Circus"
+   },
+   {
+    "name": "Lewis Watson"
+   },
+   {
+    "name": "Jaws"
+   },
+   {
+    "name": "The J-Cats"
+   },
+   {
+    "name": "Wu-Tang Clan"
+   },
+   {
+    "name": "C.C. Smugglers"
+   },
+   {
+    "name": "Example"
+   },
+   {
+    "name": "Monroe"
+   }
+  ]
+ }
+]

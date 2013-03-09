@@ -1,0 +1,51 @@
+[
+ {
+  "name": "The Cubicles",
+  "events": [
+   {
+    "name": "Andy C & MC GQ"
+   },
+   {
+    "name": "Loadstar"
+   },
+   {
+    "name": "Loko"
+   },
+   {
+    "name": "MC Visionobi"
+   },
+   {
+    "name": "Wilkinson"
+   }
+  ]
+ },
+ {
+  "name": "Orchard Stage",
+  "events": [
+   {
+    "name": "Ava Leigh"
+   },
+   {
+    "name": "Bhi Bhiman"
+   },
+   {
+    "name": "Chas & Dave"
+   },
+   {
+    "name": "Dub Pistols"
+   },
+   {
+    "name": "The Beat"
+   },
+   {
+    "name": "The Computers"
+   },
+   {
+    "name": "The Strypes"
+   },
+   {
+    "name": "Velvet Stream"
+   }
+  ]
+ }
+]

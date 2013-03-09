@@ -1,0 +1,255 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Richard Hawley"
+   },
+   {
+    "name": "Levellers"
+   },
+   {
+    "name": "Labrinth"
+   }
+  ]
+ },
+ {
+  "name": "The Big Top",
+  "events": [
+   {
+    "name": "Alan Davies"
+   }
+  ]
+ },
+ {
+  "name": "DJ acts",
+  "events": [
+   {
+    "name": "A Love from Outer Space: Andrew Weatherall & Sean Johnston"
+   },
+   {
+    "name": "Balearic Brothers"
+   },
+   {
+    "name": "Barry Ashworth"
+   },
+   {
+    "name": "David Rodigan"
+   },
+   {
+    "name": "DJ Coley"
+   },
+   {
+    "name": "Fabio & Grooverider"
+   },
+   {
+    "name": "Feeling Gloomy"
+   },
+   {
+    "name": "Grandmaster Flash"
+   },
+   {
+    "name": "John Kennedy"
+   },
+   {
+    "name": "Jon More"
+   },
+   {
+    "name": "Rob da Bank"
+   },
+   {
+    "name": "Sasha"
+   },
+   {
+    "name": "Sombrero Sound System"
+   },
+   {
+    "name": "Tythe"
+   }
+  ]
+ },
+ {
+  "name": "comedy acts",
+  "events": [
+   {
+    "name": "Boothby Graffoe"
+   },
+   {
+    "name": "Comedy Club 4 Kids"
+   },
+   {
+    "name": "Ian Stone"
+   },
+   {
+    "name": "Jason John Whitehead"
+   },
+   {
+    "name": "Jim Smallman"
+   },
+   {
+    "name": "Joel Dommett"
+   },
+   {
+    "name": "Katherine Ryan"
+   },
+   {
+    "name": "Matt Reed"
+   },
+   {
+    "name": "Pat Burtscher"
+   },
+   {
+    "name": "Stephen Carlin"
+   },
+   {
+    "name": "Tiffany Stevenson"
+   },
+   {
+    "name": "Wayne Deakin"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "Ash"
+   },
+   {
+    "name": "Beardyman"
+   },
+   {
+    "name": "Billy Bragg"
+   },
+   {
+    "name": "Clean Bandit"
+   },
+   {
+    "name": "Dan le Sac vs Scroobius Pip"
+   },
+   {
+    "name": "Dick & Dom"
+   },
+   {
+    "name": "DJ Fresh"
+   },
+   {
+    "name": "DJ Yoda"
+   },
+   {
+    "name": "Fake Bush"
+   },
+   {
+    "name": "Filthy Boy"
+   },
+   {
+    "name": "Fleetwood Bac"
+   },
+   {
+    "name": "Gabrielle Aplin"
+   },
+   {
+    "name": "Howard Marks"
+   },
+   {
+    "name": "I Am Kloot"
+   },
+   {
+    "name": "Introducing"
+   },
+   {
+    "name": "Jaipur Brass Band"
+   },
+   {
+    "name": "Jaws"
+   },
+   {
+    "name": "John Cooper Clarke"
+   },
+   {
+    "name": "Justin Fletcher aka Mr Tumble"
+   },
+   {
+    "name": "Kawa Circus"
+   },
+   {
+    "name": "Kid Creole and the Coconuts"
+   },
+   {
+    "name": "Lewis Watson"
+   },
+   {
+    "name": "Lissie"
+   },
+   {
+    "name": "London Grammar"
+   },
+   {
+    "name": "London Lucumi Choir"
+   },
+   {
+    "name": "Lucky Elephant"
+   },
+   {
+    "name": "Mad Professor"
+   },
+   {
+    "name": "Mikill Pane"
+   },
+   {
+    "name": "Moulettes"
+   },
+   {
+    "name": "Mr B The Gentleman Rhymer"
+   },
+   {
+    "name": "Musical Youth"
+   },
+   {
+    "name": "Sexy Sushi"
+   },
+   {
+    "name": "Shlomo"
+   },
+   {
+    "name": "Sunday Best Forum Allstars"
+   },
+   {
+    "name": "The 1975"
+   },
+   {
+    "name": "The Ben Waters Band"
+   },
+   {
+    "name": "The Correspondents"
+   },
+   {
+    "name": "The Cuban Brothers"
+   },
+   {
+    "name": "The Farm"
+   },
+   {
+    "name": "The J-Cats"
+   },
+   {
+    "name": "The Polyphonic Spree"
+   },
+   {
+    "name": "The Royal Albert Hall Ginornmous Percussion Orchestra"
+   },
+   {
+    "name": "The Wurzels"
+   },
+   {
+    "name": "Tom Odell"
+   },
+   {
+    "name": "Toots and the Maytals"
+   },
+   {
+    "name": "C.C. Smugglers"
+   }
+  ]
+ }
+]

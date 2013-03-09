@@ -1,0 +1,315 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Slipknot"
+   },
+   {
+    "name": "Bullet For My Valentine"
+   },
+   {
+    "name": "Korn"
+   },
+   {
+    "name": "Down"
+   },
+   {
+    "name": "Papa Roach"
+   },
+   {
+    "name": "Asking Alexandria"
+   },
+   {
+    "name": "Architects"
+   },
+   {
+    "name": "Rise To Remain"
+   },
+   {
+    "name": "Iron Maiden"
+   },
+   {
+    "name": "Queens of the Stone Age"
+   },
+   {
+    "name": "Motorhead"
+   },
+   {
+    "name": "Alice in Chains"
+   },
+   {
+    "name": "Mastodon"
+   },
+   {
+    "name": "Buckcherry"
+   },
+   {
+    "name": "Young Guns"
+   },
+   {
+    "name": "UFO"
+   },
+   {
+    "name": "Rammstein"
+   },
+   {
+    "name": "Thirty Seconds To Mars"
+   },
+   {
+    "name": "The Gaslight Anthem"
+   },
+   {
+    "name": "Stone Sour"
+   },
+   {
+    "name": "Parkway Drive"
+   },
+   {
+    "name": "Five Finger Death Punch"
+   },
+   {
+    "name": "Coal Chamber"
+   },
+   {
+    "name": "Cancer Bats"
+   },
+   {
+    "name": "Sacred Mother Tongue"
+   }
+  ]
+ },
+ {
+  "name": "Encore Second Stage",
+  "events": [
+   {
+    "name": "Gogol Bordello"
+   },
+   {
+    "name": "3 Doors Down"
+   },
+   {
+    "name": "Volbeat"
+   },
+   {
+    "name": "Europe"
+   },
+   {
+    "name": "Uriah Heep"
+   },
+   {
+    "name": "Skin (band)"
+   },
+   {
+    "name": "Dir En Grey"
+   },
+   {
+    "name": "Enter Shikari"
+   },
+   {
+    "name": "Jimmy Eat World"
+   },
+   {
+    "name": "Lit"
+   },
+   {
+    "name": "Karnivool"
+   },
+   {
+    "name": "Katatonia"
+   },
+   {
+    "name": "Escape The Fate"
+   },
+   {
+    "name": "Hellyeah"
+   },
+   {
+    "name": "Blitz Kids"
+   },
+   {
+    "name": "I Divide"
+   },
+   {
+    "name": "Limp Bizkit"
+   },
+   {
+    "name": "A Day To Remember"
+   },
+   {
+    "name": "Airbourne"
+   },
+   {
+    "name": "Amon Amarth"
+   },
+   {
+    "name": "Graveyard"
+   },
+   {
+    "name": "The Ghost Inside"
+   },
+   {
+    "name": "Heavens Basement"
+   }
+  ]
+ },
+ {
+  "name": "Pepsi Max Third Stage",
+  "events": [
+   {
+    "name": "HIM"
+   },
+   {
+    "name": "Converge"
+   },
+   {
+    "name": "Motionless In White"
+   },
+   {
+    "name": "Turisas"
+   },
+   {
+    "name": "In This Moment"
+   },
+   {
+    "name": "Hang the Bastard"
+   },
+   {
+    "name": "Emperor Chung"
+   },
+   {
+    "name": "States of Panic"
+   },
+   {
+    "name": "The Hives"
+   },
+   {
+    "name": "Uncle Acid And The Deadbeats"
+   },
+   {
+    "name": "Walking Papers"
+   },
+   {
+    "name": "The Sword"
+   },
+   {
+    "name": "Bury Tomorrow"
+   },
+   {
+    "name": "Bleed From Within"
+   },
+   {
+    "name": "Nekrogoblikon"
+   },
+   {
+    "name": "Empress"
+   },
+   {
+    "name": "Earthtone9"
+   },
+   {
+    "name": "Hill Valley High"
+   },
+   {
+    "name": "Broken"
+   },
+   {
+    "name": "Modestep"
+   },
+   {
+    "name": "Newsted"
+   },
+   {
+    "name": "P.O.D"
+   },
+   {
+    "name": "Vision Of Disorder"
+   },
+   {
+    "name": "Red Fang"
+   },
+   {
+    "name": "Hacktivist"
+   },
+   {
+    "name": "Heart Of A Coward"
+   },
+   {
+    "name": "Brutality Will Prevail"
+   }
+  ]
+ },
+ {
+  "name": "The Red Bull Stage",
+  "events": [
+   {
+    "name": "Black Dogs"
+   },
+   {
+    "name": "Verses"
+   },
+   {
+    "name": "Crowns"
+   },
+   {
+    "name": "The First"
+   },
+   {
+    "name": "Last Witness"
+   },
+   {
+    "name": "Silent Screams"
+   },
+   {
+    "name": "Astroid Boys"
+   },
+   {
+    "name": "Blacklist Royals"
+   },
+   {
+    "name": "After The Burial"
+   },
+   {
+    "name": "Rat Attack"
+   },
+   {
+    "name": "Cytota"
+   },
+   {
+    "name": "Sonic Boom Six"
+   },
+   {
+    "name": "Glamour Of The Kill"
+   },
+   {
+    "name": "The Algorithm"
+   },
+   {
+    "name": "I Am I"
+   },
+   {
+    "name": "Buffalo Summer"
+   },
+   {
+    "name": "Huntress"
+   },
+   {
+    "name": "Mordecai"
+   },
+   {
+    "name": "Naked Flame"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "Goldsboro"
+   },
+   {
+    "name": "Hardcore Superstar"
+   }
+  ]
+ }
+]

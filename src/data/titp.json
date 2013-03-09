@@ -1,0 +1,246 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Mumford & Sons"
+   },
+   {
+    "name": "Rihanna"
+   },
+   {
+    "name": "The Killers"
+   },
+   {
+    "name": "Emeli Sande"
+   }
+  ]
+ },
+ {
+  "name": "BBC Radio 1 Stage",
+  "events": [
+   {
+    "name": "Calvin Harris"
+   }
+  ]
+ },
+ {
+  "name": "King Tuts Tent",
+  "events": [
+   {
+    "name": "Kraftwerk"
+   }
+  ]
+ },
+ {
+  "name": "Slam Tent",
+  "events": [
+   {
+    "name": "Adam Beyer"
+   },
+   {
+    "name": "Ben Klock"
+   },
+   {
+    "name": "Claude Von Stroke"
+   },
+   {
+    "name": "Derrick Carter"
+   },
+   {
+    "name": "DJ Sneak"
+   },
+   {
+    "name": "Eats Everything"
+   },
+   {
+    "name": "Jackmaster"
+   },
+   {
+    "name": "Joy Orbison"
+   },
+   {
+    "name": "Marcel Dettmann"
+   },
+   {
+    "name": "Mark Farina"
+   },
+   {
+    "name": "Nina Kraviz"
+   },
+   {
+    "name": "Richie Hawtin"
+   },
+   {
+    "name": "Seth Troxler"
+   },
+   {
+    "name": "Silicone Soul"
+   },
+   {
+    "name": "Slam"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "Alt-J"
+   },
+   {
+    "name": "Azealia Banks"
+   },
+   {
+    "name": "Bastille"
+   },
+   {
+    "name": "Beady Eye"
+   },
+   {
+    "name": "British Sea Power"
+   },
+   {
+    "name": "Chase & Status"
+   },
+   {
+    "name": "Chvrches"
+   },
+   {
+    "name": "Daughter"
+   },
+   {
+    "name": "David Guetta"
+   },
+   {
+    "name": "Deacon Blue"
+   },
+   {
+    "name": "Disclosure"
+   },
+   {
+    "name": "Dizzee Rascal"
+   },
+   {
+    "name": "Editors"
+   },
+   {
+    "name": "Foals"
+   },
+   {
+    "name": "Frank Turner"
+   },
+   {
+    "name": "Frightened Rabbit"
+   },
+   {
+    "name": "HAIM"
+   },
+   {
+    "name": "Hot Natured"
+   },
+   {
+    "name": "Imagine Dragons"
+   },
+   {
+    "name": "Jake Bugg"
+   },
+   {
+    "name": "Kendrick Lamar"
+   },
+   {
+    "name": "Labrinth"
+   },
+   {
+    "name": "Laurent Garnier"
+   },
+   {
+    "name": "Miles Kane"
+   },
+   {
+    "name": "Modest Mouse"
+   },
+   {
+    "name": "Modestep"
+   },
+   {
+    "name": "Nina Nesbitt"
+   },
+   {
+    "name": "Noah and the Whale"
+   },
+   {
+    "name": "Ocean Colour Scene"
+   },
+   {
+    "name": "Of Monsters and Men"
+   },
+   {
+    "name": "Paloma Faith"
+   },
+   {
+    "name": "Peace"
+   },
+   {
+    "name": "Phoenix"
+   },
+   {
+    "name": "Rudimental"
+   },
+   {
+    "name": "Snoop Dogg"
+   },
+   {
+    "name": "Stereophonics"
+   },
+   {
+    "name": "The 1975"
+   },
+   {
+    "name": "The Courteeners"
+   },
+   {
+    "name": "The Fratellis"
+   },
+   {
+    "name": "The Heavy"
+   },
+   {
+    "name": "The Lumineers"
+   },
+   {
+    "name": "The Original Rudeboys"
+   },
+   {
+    "name": "The Proclaimers"
+   },
+   {
+    "name": "The Script"
+   },
+   {
+    "name": "The Strypes"
+   },
+   {
+    "name": "The View"
+   },
+   {
+    "name": "Tom Odell"
+   },
+   {
+    "name": "Tribes"
+   },
+   {
+    "name": "Twin Atlantic"
+   },
+   {
+    "name": "Two Door Cinema Club"
+   },
+   {
+    "name": "Villagers"
+   },
+   {
+    "name": "Yeah Yeah Yeahs"
+   }
+  ]
+ }
+]

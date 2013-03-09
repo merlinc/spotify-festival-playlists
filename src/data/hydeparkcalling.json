@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Kasabian"
+   },
+   {
+    "name": "Bruce Springsteen & The E Street Band"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "Paul Weller"
+   },
+   {
+    "name": "Miles Kane"
+   },
+   {
+    "name": "Kodaline"
+   },
+   {
+    "name": "The Cribs"
+   },
+   {
+    "name": "Klaxons"
+   },
+   {
+    "name": "Tribes"
+   },
+   {
+    "name": "The Black Crowes"
+   },
+   {
+    "name": "Alabama Shakes"
+   }
+  ]
+ }
+]

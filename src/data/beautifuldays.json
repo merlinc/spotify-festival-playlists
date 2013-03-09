@@ -1,0 +1,95 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Ocean Colour Scene"
+   },
+   {
+    "name": "Primal Scream"
+   },
+   {
+    "name": "Levellers"
+   },
+   {
+    "name": "Arrested Development"
+   },
+   {
+    "name": "Babylon Circus"
+   },
+   {
+    "name": "Brother & Bones"
+   },
+   {
+    "name": "Imelda May"
+   },
+   {
+    "name": "Molotov Jukebox"
+   },
+   {
+    "name": "Sinead O' Connor"
+   },
+   {
+    "name": "Skamanians"
+   },
+   {
+    "name": "Skatalites"
+   },
+   {
+    "name": "Steve Harley and Cockney Rebel"
+   },
+   {
+    "name": "The Selecter"
+   },
+   {
+    "name": "The Wonder Stuff"
+   }
+  ]
+ },
+ {
+  "name": "The Big Top",
+  "events": [
+   {
+    "name": "Clannad"
+   },
+   {
+    "name": "Roy Harper"
+   },
+   {
+    "name": "Damien Dempsey"
+   },
+   {
+    "name": "Headmix Collective"
+   },
+   {
+    "name": "Sharon Shannon"
+   },
+   {
+    "name": "Sheelanagig"
+   },
+   {
+    "name": "Spiers & Boden"
+   },
+   {
+    "name": "The Staves"
+   },
+   {
+    "name": "Treacherous Orchestra"
+   },
+   {
+    "name": "Viv Albertine "
+   }
+  ]
+ },
+ {
+  "name": "The Little Big Top ",
+  "events": [
+   {
+    "name": "Andy C"
+   },
+   {
+    "name": "Banco de Gaia"
+   }
+  ]
+ }
+]

@@ -1,0 +1,281 @@
+[
+ {
+  "name": "Big Top",
+  "events": [
+   {
+    "name": "Happy Mondays"
+   },
+   {
+    "name": "The Farm"
+   },
+   {
+    "name": "Lez Zeppelin"
+   },
+   {
+    "name": "The Blockheads"
+   },
+   {
+    "name": "Rizzle Kicks"
+   },
+   {
+    "name": "Delilah"
+   },
+   {
+    "name": "Ellie Goulding"
+   },
+   {
+    "name": "Fun."
+   },
+   {
+    "name": "Lianne La Havas"
+   },
+   {
+    "name": "Levellers"
+   },
+   {
+    "name": "T'Pau"
+   },
+   {
+    "name": "Sub Focus"
+   },
+   {
+    "name": "Andy C"
+   },
+   {
+    "name": "Friction"
+   },
+   {
+    "name": "Modestep"
+   },
+   {
+    "name": "Zane Lowe"
+   },
+   {
+    "name": "Monsta "
+   },
+   {
+    "name": "Ke$ha"
+   },
+   {
+    "name": "Little Mix"
+   },
+   {
+    "name": "Lawson"
+   },
+   {
+    "name": "Devlin"
+   },
+   {
+    "name": "Willy Moon"
+   },
+   {
+    "name": "Blondie"
+   },
+   {
+    "name": "I Am Kloot"
+   },
+   {
+    "name": "Imperial Teen"
+   },
+   {
+    "name": "Young Guns"
+   },
+   {
+    "name": "Kids in Glass Houses"
+   },
+   {
+    "name": "Imagine Dragons"
+   },
+   {
+    "name": "Kodaline"
+   },
+   {
+    "name": "Republica"
+   },
+   {
+    "name": "Tracer"
+   }
+  ]
+ },
+ {
+  "name": "The Garden Stage",
+  "events": [
+   {
+    "name": "Stackridge"
+   },
+   {
+    "name": "Steve Forbert"
+   }
+  ]
+ },
+ {
+  "name": "Dance Tent",
+  "events": [
+   {
+    "name": "A-Trak"
+   },
+   {
+    "name": "Jaguar Skills"
+   },
+   {
+    "name": "Grandmaster Flash"
+   },
+   {
+    "name": "Ms Dynamite"
+   },
+   {
+    "name": "DJ Ez"
+   },
+   {
+    "name": "Example & DJ Wire"
+   },
+   {
+    "name": "Madeon"
+   },
+   {
+    "name": "Faith SFX"
+   },
+   {
+    "name": "Benga and Youngman"
+   },
+   {
+    "name": "Mistajam"
+   },
+   {
+    "name": "Wiley"
+   },
+   {
+    "name": "Silent Disco King"
+   },
+   {
+    "name": "Damian Lazarus"
+   },
+   {
+    "name": "Lee Foss"
+   },
+   {
+    "name": "Derrick Carter"
+   },
+   {
+    "name": "Miguel Campbell"
+   },
+   {
+    "name": "Huxley"
+   },
+   {
+    "name": "Mosca"
+   },
+   {
+    "name": "MK"
+   },
+   {
+    "name": "Duke Dumont"
+   },
+   {
+    "name": "Roses Gabor"
+   },
+   {
+    "name": "Gorgon City"
+   },
+   {
+    "name": "Waifs and Strays"
+   },
+   {
+    "name": "Alexis Raphael"
+   }
+  ]
+ },
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "The Stone Roses"
+   },
+   {
+    "name": "Paul Weller"
+   },
+   {
+    "name": "Emeli Sande"
+   },
+   {
+    "name": "Jake Bugg"
+   },
+   {
+    "name": "Everything Everything"
+   },
+   {
+    "name": "Palma Violets"
+   },
+   {
+    "name": "The Killers"
+   },
+   {
+    "name": "Bloc Party"
+   },
+   {
+    "name": "The Maccabees"
+   },
+   {
+    "name": "Ben Howard"
+   },
+   {
+    "name": "Bastille"
+   },
+   {
+    "name": "Bonnie Raitt"
+   },
+   {
+    "name": "Laura Mvula"
+   },
+   {
+    "name": "Ian Hunter"
+   },
+   {
+    "name": "Willy Mason"
+   },
+   {
+    "name": "Bon Jovi"
+   },
+   {
+    "name": "The Script"
+   },
+   {
+    "name": "Paloma Faith"
+   },
+   {
+    "name": "Newton Faulkner"
+   },
+   {
+    "name": "Boomtown Rats"
+   },
+   {
+    "name": "Steve Harley and Cockney Rebel"
+   },
+   {
+    "name": "Little Angels"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "Hugh Cornwell"
+   },
+   {
+    "name": "Gypsy Queens"
+   }
+  ]
+ },
+ {
+  "name": "The Cabaret Club",
+  "events": [
+   {
+    "name": "Tim Burgess"
+   },
+   {
+    "name": "Tim Burgess"
+   }
+  ]
+ }
+]

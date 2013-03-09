@@ -11,7 +11,7 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
       $.getJSON('data/festivals.json', function(data) {
         var festivalItems = [];
         $.each(data, function(key, val) {
-          festivalItems.push({"id": val.data, "name":val.festival});
+          festivalItems.push({"id": val.id, "name":val.name});
         });
 
         callback(festivalItems);
@@ -21,7 +21,7 @@ require(['js/jquery','$api/models', '$api/search', '$views/list', '$views/button
     this.loadStages = function loadStages(festival, callback) {
       festivalName = festival;
 
-      var dataURL = 'data/' + festival;
+      var dataURL = 'data/' + festival + ".json";
       $.getJSON(dataURL, function(data) {
 
         var stageItems = [];

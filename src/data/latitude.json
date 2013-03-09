@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Foals"
+   },
+   {
+    "name": "Atoms for Peace"
+   },
+   {
+    "name": "Kraftwerk"
+   },
+   {
+    "name": "Pet Shop Boys"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "I Am Kloot"
+   }
+  ]
+ }
+]

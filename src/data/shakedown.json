@@ -1,0 +1,48 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Rizzle Kicks"
+   },
+   {
+    "name": "Labrinth"
+   },
+   {
+    "name": "DJ Fresh"
+   },
+   {
+    "name": "Maverick Sabre"
+   },
+   {
+    "name": "Delilah"
+   },
+   {
+    "name": "Mikill Pane"
+   },
+   {
+    "name": "Jaguar Skills"
+   },
+   {
+    "name": "Jacob Plant"
+   }
+  ]
+ },
+ {
+  "name": "The Supercharged Arena",
+  "events": [
+   {
+    "name": "Sub Focus"
+   },
+   {
+    "name": "Zane Lowe"
+   },
+   {
+    "name": "A Skillz"
+   },
+   {
+    "name": "Krafty Kuts"
+   }
+  ]
+ }
+]

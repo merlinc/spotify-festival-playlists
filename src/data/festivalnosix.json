@@ -1,0 +1,157 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "James Blake"
+   },
+   {
+    "name": "Manic Street Preachers"
+   }
+  ]
+ },
+ {
+  "name": "DJs",
+  "events": [
+   {
+    "name": "Andrew Weatherall"
+   },
+   {
+    "name": "Balearic Mike"
+   },
+   {
+    "name": "Bobby Irish"
+   },
+   {
+    "name": "Carl Craig"
+   },
+   {
+    "name": "Content DJs"
+   },
+   {
+    "name": "Daniel Avery"
+   },
+   {
+    "name": "Frankie Knuckles"
+   },
+   {
+    "name": "Futureboogie"
+   },
+   {
+    "name": "Gilles Peterson"
+   },
+   {
+    "name": "Greg Wilson"
+   },
+   {
+    "name": "Justin Robertson"
+   },
+   {
+    "name": "Krysko"
+   },
+   {
+    "name": "Maxxi Soundsystem"
+   },
+   {
+    "name": "San Soda"
+   },
+   {
+    "name": "Unabombers"
+   }
+  ]
+ },
+ {
+  "name": "arts & culture guests",
+  "events": [
+   {
+    "name": "Bob Stanley"
+   },
+   {
+    "name": "Caitlin Moran"
+   },
+   {
+    "name": "DBC Pierre"
+   },
+   {
+    "name": "Gavin Turk"
+   },
+   {
+    "name": "Jan Morris"
+   },
+   {
+    "name": "John Cooper Clarke"
+   },
+   {
+    "name": "John Niven"
+   },
+   {
+    "name": "Michael Smith"
+   },
+   {
+    "name": "Paul Morley"
+   },
+   {
+    "name": "Serafina Steer"
+   },
+   {
+    "name": "Tracey Thorn"
+   },
+   {
+    "name": "Viv Albertine "
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "AlunaGeorge"
+   },
+   {
+    "name": "Caitlin Rose"
+   },
+   {
+    "name": "Chapel Club"
+   },
+   {
+    "name": "Charlie Boyer and The Voyeurs"
+   },
+   {
+    "name": "Clinic"
+   },
+   {
+    "name": "Dutch Uncles"
+   },
+   {
+    "name": "Everything Everything"
+   },
+   {
+    "name": "Hookworms"
+   },
+   {
+    "name": "I Am Kloot"
+   },
+   {
+    "name": "Indians"
+   },
+   {
+    "name": "Jagwar Ma"
+   },
+   {
+    "name": "Laura Mvula"
+   },
+   {
+    "name": "Mount Kimbie"
+   },
+   {
+    "name": "Sweet Baboo"
+   },
+   {
+    "name": "Temples"
+   },
+   {
+    "name": "The Staves"
+   }
+  ]
+ }
+]

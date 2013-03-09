@@ -1,0 +1,145 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "The Enemy"
+   },
+   {
+    "name": "Ash"
+   },
+   {
+    "name": "The Horrors"
+   },
+   {
+    "name": "Dizraeli and the Small Gods"
+   },
+   {
+    "name": "The Cribs"
+   },
+   {
+    "name": "The Twang"
+   }
+  ]
+ },
+ {
+  "name": "Quarry",
+  "events": [
+   {
+    "name": "Dan le Sac vs Scroobius Pip"
+   },
+   {
+    "name": "Dry The River"
+   }
+  ]
+ },
+ {
+  "name": "Alcopop Takeover",
+  "events": [
+   {
+    "name": "Axes"
+   },
+   {
+    "name": "Crushing Blows"
+   },
+   {
+    "name": "Gunning For Tamar"
+   },
+   {
+    "name": "Johnny Foreigner"
+   },
+   {
+    "name": "Max Raptor"
+   },
+   {
+    "name": "My First Tooth"
+   },
+   {
+    "name": "Stagecoach"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "65daysofstatic"
+   },
+   {
+    "name": "Arcane Roots"
+   },
+   {
+    "name": "Dutch Uncles"
+   },
+   {
+    "name": "Evarose"
+   },
+   {
+    "name": "Gallops"
+   },
+   {
+    "name": "Gnarwolves"
+   },
+   {
+    "name": "Jack Martello"
+   },
+   {
+    "name": "King Pleasure and the Biscuit Boys"
+   },
+   {
+    "name": "Lewis Watson"
+   },
+   {
+    "name": "Naymedici"
+   },
+   {
+    "name": "Planes"
+   },
+   {
+    "name": "Propellers"
+   },
+   {
+    "name": "Rat Attack"
+   },
+   {
+    "name": "Sharks"
+   },
+   {
+    "name": "Stealing Sheep"
+   },
+   {
+    "name": "The 1975"
+   },
+   {
+    "name": "The Computers"
+   },
+   {
+    "name": "The Family Rain"
+   },
+   {
+    "name": "The History Of Apple Pie"
+   },
+   {
+    "name": "The Physics House Band"
+   },
+   {
+    "name": "Three Trapped Tigers"
+   },
+   {
+    "name": "Toy"
+   },
+   {
+    "name": "We Are The Ocean"
+   },
+   {
+    "name": "We Were Promised Jetpacks"
+   },
+   {
+    "name": "Wet Nuns"
+   },
+   {
+    "name": "Zico Chain"
+   }
+  ]
+ }
+]

@@ -1,0 +1,104 @@
+[
+ {
+  "name": "Ronnie James Dio Stage",
+  "events": [
+   {
+    "name": "King Diamond"
+   },
+   {
+    "name": "Accept"
+   },
+   {
+    "name": "Municipal Waste"
+   },
+   {
+    "name": "Dark Funeral"
+   },
+   {
+    "name": "Firewind"
+   },
+   {
+    "name": "Death Angel"
+   },
+   {
+    "name": "Ex Deo"
+   },
+   {
+    "name": "Lamb of God"
+   },
+   {
+    "name": "Avantasia"
+   },
+   {
+    "name": "Kataklysm"
+   },
+   {
+    "name": "Hell"
+   },
+   {
+    "name": "Belphegor"
+   },
+   {
+    "name": "3 Inches of Blood"
+   },
+   {
+    "name": "Dying Fetus"
+   },
+   {
+    "name": "Slayer"
+   },
+   {
+    "name": "Anthrax"
+   },
+   {
+    "name": "DevilDriver"
+   },
+   {
+    "name": "Amorphis"
+   },
+   {
+    "name": "Fozzy"
+   },
+   {
+    "name": "Exodus"
+   },
+   {
+    "name": "Whitechapel"
+   }
+  ]
+ },
+ {
+  "name": "Sophie Lancaster Stage",
+  "events": [
+   {
+    "name": "Scar Symmetry"
+   },
+   {
+    "name": "Xerath"
+   },
+   {
+    "name": "The Prophecy"
+   },
+   {
+    "name": "Bloodbound"
+   },
+   {
+    "name": "Scarab"
+   },
+   {
+    "name": "Vanderbuyst"
+   },
+   {
+    "name": "Pritchard Vs Dainton"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "Negligence"
+   }
+  ]
+ }
+]

@@ -1,0 +1,99 @@
+[
+ {
+  "name": "Main Stage",
+  "events": [
+   {
+    "name": "Biffy Clyro"
+   },
+   {
+    "name": "Eminem"
+   },
+   {
+    "name": "Bring Me The Horizon"
+   },
+   {
+    "name": "Deftones"
+   },
+   {
+    "name": "Fall Out Boy"
+   },
+   {
+    "name": "Foals"
+   },
+   {
+    "name": "System of a Down"
+   },
+   {
+    "name": "Arctic Monkeys"
+   },
+   {
+    "name": "Black Sabbath"
+   },
+   {
+    "name": "Green Day"
+   }
+  ]
+ },
+ {
+  "name": "NME/Radio 1 Stage",
+  "events": [
+   {
+    "name": "Alt-J"
+   },
+   {
+    "name": "Jake Bugg"
+   }
+  ]
+ },
+ {
+  "name": "BBC Radio 1 Dance Stage",
+  "events": [
+   {
+    "name": "Sub Focus"
+   }
+  ]
+ },
+ {
+  "name": "1Xtra Stage",
+  "events": [
+   {
+    "name": "Boy Better Know"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "Bat For Lashes"
+   },
+   {
+    "name": "Dizzee Rascal"
+   },
+   {
+    "name": "Django Django"
+   },
+   {
+    "name": "Editors"
+   },
+   {
+    "name": "Magnetic Man"
+   },
+   {
+    "name": "Miles Kane"
+   },
+   {
+    "name": "Palma Violets"
+   },
+   {
+    "name": "Peace"
+   },
+   {
+    "name": "Tribes"
+   },
+   {
+    "name": "Willy Moon"
+   }
+  ]
+ }
+]
