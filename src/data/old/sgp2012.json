@@ -1,0 +1,36 @@
+[
+{
+      "name":"The Great Stage",
+      "events":[
+        {"name":"Caravan Palace", "action": "added", "date": 20130101},
+        {"name":"Tim Minchin", "action": "removed", "date": 20130131},
+        {"name":"Orbital", "action": "added", "date":20130131},
+        {"name":"Willy Moon", "action": "added", "date":20130131}
+      ]
+    },
+    {
+      "name":"Where The Wild Things Are",
+      "events":[
+        {"name":"Fujiya & Miyagi", "action": "added", "date": 20130101},
+        {"name":"King Charles", "action": "added", "date": 20130101},
+        {"name":"I Blame Coco", "action": "added", "date": 20130101}
+      ]
+    },
+        {
+      "name":"The Crossroads",
+      "events":[
+        {"name":"The Jim Jones Revue", "action": "added", "date": 20130101},
+        {"name":"Kitty, Daisy & Lewis", "action": "added", "date": 20130101},
+        {"name":"I Blame Coco", "action": "added", "date": 20130101}
+      ]
+    },
+    {
+      "name":"Temple of Boom",
+      "events":[
+        {"name":"Adam Freeland", "action": "added", "date": 20130101},
+        {"name":"Utah Saints", "action": "added", "date": 20130101},
+        {"name":"Scroobius Pip", "action": "added", "date": 20130101},
+        {"name":"Losers", "action": "added", "date": 20130101}
+      ]
+    }
+]

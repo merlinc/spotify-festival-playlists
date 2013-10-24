@@ -1,0 +1,13 @@
+{
+  "title": "Festival Playlists",
+  "offline": "Offline",
+  "offline_message": "Festival Playlists does not work in offline mode. Please check your connection or disable offline mode",
+  "festivals_heading": "festivals",
+  "festivals_filter": "...filter...",
+  "festivals_load": "Load Stages",
+  "stages_heading": "stages",
+  "stages_filter_all": "All",
+  "stages_filter_none": "None",
+  "stages_load": "Load Tracks by Artists",
+  "tracks_heading": "artist & tracks"
+}

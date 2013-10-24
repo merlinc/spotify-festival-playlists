@@ -1,0 +1,712 @@
+[
+ {
+  "name": "All Stages", 
+  "events": [  
+  {
+    "name": "8Foot Felix"
+   },
+   {
+    "name": "Afriquoi"
+   },
+   {
+    "name": "Afro Cluster"
+   },
+   {
+    "name": "Antelope"
+   },
+   {
+    "name": "Arrested Development"
+   },
+   {
+    "name": "Astroid Boys"
+   },
+   {
+    "name": "Baby Queens"
+   },
+   {
+    "name": "Babydub"
+   },
+   {
+    "name": "Babyhead"
+   },
+   {
+    "name": "Backbeat Soundsystem"
+   },
+   {
+    "name": "Bad Manners"
+   },
+   {
+    "name": "Bad Transmission"
+   },
+   {
+    "name": "Bahia"
+   },
+   {
+    "name": "Bass6"
+   },
+   {
+    "name": "Beans On Toast"
+   },
+   {
+    "name": "Beat The Red Light"
+   },
+   {
+    "name": "Biere De Luxe"
+   },
+   {
+    "name": "Big Red Ass"
+   },
+   {
+    "name": "Bigtopp"
+   },
+   {
+    "name": "Binewski Murder"
+   },
+   {
+    "name": "Birth Of Joy"
+   },
+   {
+    "name": "Bison"
+   },
+   {
+    "name": "Black Star Dub Collective"
+   },
+   {
+    "name": "Blackout JA"
+   },
+   {
+    "name": "Boothill Allstars"
+   },
+   {
+    "name": "Bootscraper"
+   },
+   {
+    "name": "Born Ina Barn"
+   },
+   {
+    "name": "Boys In The Wood"
+   },
+   {
+    "name": "Buffo's Wake"
+   },
+   {
+    "name": "Buggsy + Full Live Band"
+   },
+   {
+    "name": "BVA"
+   },
+   {
+    "name": "By The Rivers"
+   },
+   {
+    "name": "Cable Street Collective"
+   },
+   {
+    "name": "Calico Jack"
+   },
+   {
+    "name": "Captain Accident"
+   },
+   {
+    "name": "Carny Villains"
+   },
+   {
+    "name": "Carpetface & Audible"
+   },
+   {
+    "name": "Cazal"
+   },
+   {
+    "name": "CC Smugglers"
+   },
+   {
+    "name": "Central Spillz"
+   },
+   {
+    "name": "ChainSka Brassika"
+   },
+   {
+    "name": "Chewing On Tinfoil"
+   },
+   {
+    "name": "China Shop Bull"
+   },
+   {
+    "name": "Chinese Man"
+   },
+   {
+    "name": "Chris Murray"
+   },
+   {
+    "name": "Citizen Fish"
+   },
+   {
+    "name": "CODA"
+   },
+   {
+    "name": "Collie Buddz & New Kingston"
+   },
+   {
+    "name": "Counting Coins"
+   },
+   {
+    "name": "Crash Nomada"
+   },
+   {
+    "name": "Cut Capers"
+   },
+   {
+    "name": "David Boomah"
+   },
+   {
+    "name": "Deadsilence"
+   },
+   {
+    "name": "Debian Blak"
+   },
+   {
+    "name": "Dexter Dexterous"
+   },
+   {
+    "name": "Demented Are Go"
+   },
+   {
+    "name": "Dirty Dike"
+   },
+   {
+    "name": "Dirty Revolution"
+   },
+   {
+    "name": "Disco Panther"
+   },
+   {
+    "name": "Dizraeli + Downlow"
+   },
+   {
+    "name": "Dope Ammo"
+   },
+   {
+    "name": "Dreadsquad feat. Dr Ring Ding + Kasia Malenda + El Fata"
+   },
+   {
+    "name": "Drunken Balordi"
+   },
+   {
+    "name": "Dub Heart"
+   },
+   {
+    "name": "Dub Inc ."
+   },
+   {
+    "name": "Ducie"
+   },
+   {
+    "name": "Edward Scissortongue"
+   },
+   {
+    "name": "Electric Swing Circus"
+   },
+   {
+    "name": "Elro"
+   },
+   {
+    "name": "Euphony"
+   },
+   {
+    "name": "Eva Lazarus"
+   },
+   {
+    "name": "Faintest Idea"
+   },
+   {
+    "name": "Fernquest"
+   },
+   {
+    "name": "Firepit Collective"
+   },
+   {
+    "name": "First Degree Burns"
+   },
+   {
+    "name": "Flap!"
+   },
+   {
+    "name": "Fliptrix"
+   },
+   {
+    "name": "Foreign Beggars"
+   },
+   {
+    "name": "Four Owls"
+   },
+   {
+    "name": "Freakeasy!"
+   },
+   {
+    "name": "Freefall Collective"
+   },
+   {
+    "name": "Friendly Fire Band"
+   },
+   {
+    "name": "Gadjo"
+   },
+   {
+    "name": "Gardna"
+   },
+   {
+    "name": "General Roots"
+   },
+   {
+    "name": "Gentle Mystics"
+   },
+   {
+    "name": "Gentleman + The Evolution"
+   },
+   {
+    "name": "Gentleman's Dub Club"
+   },
+   {
+    "name": "Graveyard Johnnys"
+   },
+   {
+    "name": "Guns Of Navarone"
+   },
+   {
+    "name": "Gypsy Fever"
+   },
+   {
+    "name": "Gypsy Hill"
+   },
+   {
+    "name": "Gypsy Unit"
+   },
+   {
+    "name": "Hallouminati"
+   },
+   {
+    "name": "Hard Cor (Beatbox Choir)"
+   },
+   {
+    "name": "Heymoonshaker"
+   },
+   {
+    "name": "Hoffmaestro"
+   },
+   {
+    "name": "Hot Cakes Live"
+   },
+   {
+    "name": "Hypeman Sage"
+   },
+   {
+    "name": "I-Fire"
+   },
+   {
+    "name": "Infinite Collective"
+   },
+   {
+    "name": "Inner Terrestrials"
+   },
+   {
+    "name": "Jah Mirikle"
+   },
+   {
+    "name": "Jam Baxter"
+   },
+   {
+    "name": "Jauge"
+   },
+   {
+    "name": "Jman & DJ Fingerfood feat. Res + Gravity"
+   },
+   {
+    "name": "John Fairhurst"
+   },
+   {
+    "name": "Johnny Cage & The Voodoo Groove"
+   },
+   {
+    "name": "Johnny Kowalski + The Sexy Wierdos"
+   },
+   {
+    "name": "Josefina Bosisio"
+   },
+   {
+    "name": "Kimberley Newell"
+   },
+   {
+    "name": "King Prawn"
+   },
+   {
+    "name": "King Tut's Revenge"
+   },
+   {
+    "name": "Kitten & the Hip"
+   },
+   {
+    "name": "La La & The Boo Ya"
+   },
+   {
+    "name": "Laid Blak"
+   },
+   {
+    "name": "LDZ (London Zoo)"
+   },
+   {
+    "name": "Leaf Dog"
+   },
+   {
+    "name": "Lee Scratch Perry"
+   },
+   {
+    "name": "Les Hurlements D' Leo"
+   },
+   {
+    "name": "Les Yeux d'la Tete"
+   },
+   {
+    "name": "Lunatrix"
+   },
+   {
+    "name": "Mac Abbe et le Zombi Orchestra"
+   },
+   {
+    "name": "Mad Caddies"
+   },
+   {
+    "name": "Mad Dog Mcrea"
+   },
+   {
+    "name": "Melosa"
+   },
+   {
+    "name": "Mike Dennis"
+   },
+   {
+    "name": "Million Stylez"
+   },
+   {
+    "name": "Molotov Jukebox"
+   },
+   {
+    "name": "More Like Trees"
+   },
+   {
+    "name": "Mouse Outfit feat. Dr Syntax + Sparkz"
+   },
+   {
+    "name": "Mr Cat & The Jackal"
+   },
+   {
+    "name": "Musical Youth"
+   },
+   {
+    "name": "My Bad Sister"
+   },
+   {
+    "name": "Nanci & Pheobe + DJ Wulu"
+   },
+   {
+    "name": "Necessary Mayhem ft Tippa Irie + Mr Williamz"
+   },
+   {
+    "name": "Neck"
+   },
+   {
+    "name": "New Groove Formation"
+   },
+   {
+    "name": "New Town Kings"
+   },
+   {
+    "name": "Nucleus Roots"
+   },
+   {
+    "name": "Odjbox & Pierre"
+   },
+   {
+    "name": "One Roots"
+   },
+   {
+    "name": "Only Joe"
+   },
+   {
+    "name": "Orkestra Del Sol"
+   },
+   {
+    "name": "Orquestra Voadora"
+   },
+   {
+    "name": "Oscillator"
+   },
+   {
+    "name": "Outl4w"
+   },
+   {
+    "name": "Ozomatli"
+   },
+   {
+    "name": "Pás de Problème"
+   },
+   {
+    "name": "Poor Old Dogs"
+   },
+   {
+    "name": "Popes Of Chillitown"
+   },
+   {
+    "name": "Prince Fatty + Horseman"
+   },
+   {
+    "name": "Problem Child"
+   },
+   {
+    "name": "Pronghorn"
+   },
+   {
+    "name": "Radikal Guru"
+   },
+   {
+    "name": "Räfven"
+   },
+   {
+    "name": "Random Hand"
+   },
+   {
+    "name": "Rasta 4 Eyes"
+   },
+   {
+    "name": "Rebel Control"
+   },
+   {
+    "name": "Reeps One"
+   },
+   {
+    "name": "Reggae Roast"
+   },
+   {
+    "name": "Regime"
+   },
+   {
+    "name": "Richie Spice"
+   },
+   {
+    "name": "RotFront"
+   },
+   {
+    "name": "Royal Gala Band"
+   },
+   {
+    "name": "Ruby Samba"
+   },
+   {
+    "name": "Samsara"
+   },
+   {
+    "name": "Seas Of Mirth Pirate Band"
+   },
+   {
+    "name": "Shoot The Moon"
+   },
+   {
+    "name": "SickNote"
+   },
+   {
+    "name": "Ska Cubano"
+   },
+   {
+    "name": "Ska 'N' Ska"
+   },
+   {
+    "name": "Skamanians"
+   },
+   {
+    "name": "Skitz & Deadly Hunta"
+   },
+   {
+    "name": "Slamboree"
+   },
+   {
+    "name": "Slightly Offensive Steve"
+   },
+   {
+    "name": "Smerin's Anti Social Club"
+   },
+   {
+    "name": "Solo Banton & The Upper Cut Band"
+   },
+   {
+    "name": "South Central (Live)"
+   },
+   {
+    "name": "Split Prophets"
+   },
+   {
+    "name": "Step 13"
+   },
+   {
+    "name": "Street Dogs"
+   },
+   {
+    "name": "Suicide Bid"
+   },
+   {
+    "name": "Suzy Condrad"
+   },
+   {
+    "name": "Swingrowers"
+   },
+   {
+    "name": "Sykes"
+   },
+   {
+    "name": "Ta Mere"
+   },
+   {
+    "name": "The Age Of Glass"
+   },
+   {
+    "name": "The Bohemianauts"
+   },
+   {
+    "name": "The Bleedin Noses"
+   },
+   {
+    "name": "The Bombs"
+   },
+   {
+    "name": "The Brains"
+   },
+   {
+    "name": "The Casualties"
+   },
+   {
+    "name": "The Creepshow"
+   },
+   {
+    "name": "The Drop"
+   },
+   {
+    "name": "The Dualers"
+   },
+   {
+    "name": "The Fat Bastard Gang Band"
+   },
+   {
+    "name": "The Fresh Dixie Project"
+   },
+   {
+    "name": "The Great Malarkey"
+   },
+   {
+    "name": "The Jargonauts"
+   },
+   {
+    "name": "The JB Conspiracy"
+   },
+   {
+    "name": "The Junk"
+   },
+   {
+    "name": "The Magnus Puto Band"
+   },
+   {
+    "name": "The Mahones"
+   },
+   {
+    "name": "The Majestic"
+   },
+   {
+    "name": "The Neville Staple Band"
+   },
+   {
+    "name": "The Original Rabbit Foot Spasm Band"
+   },
+   {
+    "name": "The Parov Stelar Band"
+   },
+   {
+    "name": "The Peacocks"
+   },
+   {
+    "name": "The Penny Black Remedy"
+   },
+   {
+    "name": "The Resonators"
+   },
+   {
+    "name": "The Restarts"
+   },
+   {
+    "name": "The Rinky Dinks"
+   },
+   {
+    "name": "The Roughneck Riot"
+   },
+   {
+    "name": "The Rubber Duck Orchestra"
+   },
+   {
+    "name": "The Rude Em Outs"
+   },
+   {
+    "name": "The Selecter"
+   },
+   {
+    "name": "The Skimmity Hitchers"
+   },
+   {
+    "name": "The Skints"
+   },
+   {
+    "name": "The Sweet Life Society"
+   },
+   {
+    "name": "The Tatsmiths"
+   },
+   {
+    "name": "The Top Shelf Band"
+   },
+   {
+    "name": "The Wurzels"
+   },
+   {
+    "name": "The Zen Hussies"
+   },
+   {
+    "name": "Tiger Blue"
+   },
+   {
+    "name": "Toots & The Maytals"
+   },
+   {
+    "name": "Toyface"
+   },
+   {
+    "name": "Tragic Roundabout"
+   },
+   {
+    "name": "Tree House Fire"
+   },
+   {
+    "name": "Tyrannosaurus Alan"
+   },
+   {
+    "name": "Upbeat Allstars"
+   },
+   {
+    "name": "Verb T"
+   },
+   {
+    "name": "Will & The People"
+   },
+   {
+    "name": "Will Tun & The Wasters"
+   },
+   {
+    "name": "Worldly Savages"
+   }
+  ]
+ }
+]

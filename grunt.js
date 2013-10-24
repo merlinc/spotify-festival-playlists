@@ -26,7 +26,7 @@ module.exports = function (grunt) {
         clean: ['<%= distdir %>/*'],
         copy: {
           assets: {
-            files: {'<%= distdir %>/assets/': 'src/assets/**'}
+            files: {'<%= distdir %>/images/': 'src/images/**'}
           },
           css: {
             files: {'<%= distdir %>/css/': 'src/css/**/*.css'}
@@ -40,7 +40,7 @@ module.exports = function (grunt) {
 
           },
           appJS: {
-            files: [{'<%= distdir%>/js/': 'src/js/**/*.js'}
+            files: [{'<%= distdir%>/js/': 'src/scripts/**/*.js'}
             ]
           }
         },
@@ -99,10 +99,10 @@ module.exports = function (grunt) {
     });
 
     // Default task.
-    grunt.registerTask('default', 'lint build'); // test:unit
+    grunt.registerTask('default', 'build'); // test:unit
     grunt.registerTask('build', 'clean concat index copy');
-    grunt.registerTask('release', 'clean min lint test index copy e2e');
-    grunt.registerTask('heroku', 'clean min lint index copy');
+    grunt.registerTask('release', 'clean min test index copy e2e');
+    grunt.registerTask('heroku', 'clean min index copy');
 
     // HTML stuff
     grunt.registerTask('index', 'Process index.html', function(){

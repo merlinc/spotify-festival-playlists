@@ -1,0 +1,447 @@
+[
+ {
+  "name": "Pyramid Stage",
+  "events": [
+   {
+    "name": "Arctic Monkeys"
+   },
+   {
+    "name": "Dizzee Rascal"
+   },
+   {
+    "name": "The Rolling Stones"
+   },
+   {
+    "name": "Radiohead"
+   },
+   {
+    "name": "Rokia Traore"
+   },
+   {
+    "name": "Kings of Leon"
+   },
+   {
+    "name": "Lady Gaga"
+   },
+   {
+    "name": "Mumford & Sons"
+   },
+   {
+    "name": "Plan B"
+   }
+  ]
+ },
+ {
+  "name": "Silver Hayes Dance Area",
+  "events": [
+   {
+    "name": "Leftfield"
+   },
+   {
+    "name": "Jackmaster"
+   },
+   {
+    "name": "Aphex Twin"
+   },
+   {
+    "name": "DJ Greg Wilson"
+   },
+   {
+    "name": "Jagwar Ma"
+   },
+   {
+    "name": "Laid Blak"
+   }
+  ]
+ },
+ {
+  "name": "unknown stage",
+  "events": [
+   {
+    "name": "Bill Wyman's Rhythm Kings"
+   },
+   {
+    "name": "Dub Pistols"
+   },
+   {
+    "name": "Kaiser Chiefs"
+   },
+   {
+    "name": "Noel Gallagher's High Flying Birds"
+   },
+   {
+    "name": "Rustie"
+   },
+   {
+    "name": "Submotion Orchestra"
+   },
+   {
+    "name": "Noasis"
+   },
+   {
+    "name": "Wiley"
+   },
+   {
+    "name": "Dr Meaker"
+   },
+   {
+    "name": "Kate Fox"
+   },
+   {
+    "name": "A Band Called Wanda"
+   },
+   {
+    "name": "Alt-J"
+   },
+   {
+    "name": "Atoms for Peace"
+   },
+   {
+    "name": "Azealia Banks"
+   },
+   {
+    "name": "Beltane Border Morris"
+   },
+   {
+    "name": "Billy Bragg"
+   },
+   {
+    "name": "Black Balloons"
+   },
+   {
+    "name": "Blackberry Wood"
+   },
+   {
+    "name": "Boys"
+   },
+   {
+    "name": "Bridie Jackson and The Arbour"
+   },
+   {
+    "name": "C.C. Smugglers"
+   },
+   {
+    "name": "Chase & Status"
+   },
+   {
+    "name": "Devendra Banhart"
+   },
+   {
+    "name": "Django Django"
+   },
+   {
+    "name": "Eclectic Ballroom"
+   },
+   {
+    "name": "Editors"
+   },
+   {
+    "name": "ElectroBlues"
+   },
+   {
+    "name": "Example"
+   },
+   {
+    "name": "Fatboy Slim"
+   },
+   {
+    "name": "Foals"
+   },
+   {
+    "name": "Fokn Bois"
+   },
+   {
+    "name": "Frightened Rabbit"
+   },
+   {
+    "name": "Groove Armada (live)"
+   },
+   {
+    "name": "Guns of Navarone (from Bournemouth)"
+   },
+   {
+    "name": "HAIM"
+   },
+   {
+    "name": "Howler"
+   },
+   {
+    "name": "I Am Kloot"
+   },
+   {
+    "name": "Isaiah Dreads"
+   },
+   {
+    "name": "Jake Bugg"
+   },
+   {
+    "name": "John Grant"
+   },
+   {
+    "name": "John Lee Hooker Jr"
+   },
+   {
+    "name": "Johnny Marr"
+   },
+   {
+    "name": "Kitten and The Hip"
+   },
+   {
+    "name": "Lianne La Havas"
+   },
+   {
+    "name": "Lillian Todd Jones"
+   },
+   {
+    "name": "M. Ward"
+   },
+   {
+    "name": "Mae and the Midnight Fairground"
+   },
+   {
+    "name": "Magnetic Man"
+   },
+   {
+    "name": "Mal Webb"
+   },
+   {
+    "name": "Manners"
+   },
+   {
+    "name": "Martha Wainwright"
+   },
+   {
+    "name": "Mik Artistik's Ego Trip"
+   },
+   {
+    "name": "Peace"
+   },
+   {
+    "name": "Port Isla"
+   },
+   {
+    "name": "Professor Green"
+   },
+   {
+    "name": "Rhys Lloyd Morgan"
+   },
+   {
+    "name": "Riot Jazz"
+   },
+   {
+    "name": "Rita Ora"
+   },
+   {
+    "name": "Rodriguez"
+   },
+   {
+    "name": "Rufus Wainwright"
+   },
+   {
+    "name": "Sister Deborah"
+   },
+   {
+    "name": "Smerins Anti-Social Club"
+   },
+   {
+    "name": "Tame Impala"
+   },
+   {
+    "name": "Tegan & Sara"
+   },
+   {
+    "name": "The Dancers"
+   },
+   {
+    "name": "The Dolphins Fly"
+   },
+   {
+    "name": "The Loose Moose String Band"
+   },
+   {
+    "name": "The National"
+   },
+   {
+    "name": "The Proclaimers"
+   },
+   {
+    "name": "The Travelling Band"
+   },
+   {
+    "name": "The Vaccines"
+   },
+   {
+    "name": "The xx"
+   },
+   {
+    "name": "These Reigning Days"
+   },
+   {
+    "name": "Two Door Cinema Club"
+   },
+   {
+    "name": "Zulu Winter"
+   }
+  ]
+ },
+ {
+  "name": "Acoustic Tent",
+  "events": [
+   {
+    "name": "Bootleg Beatles"
+   },
+   {
+    "name": "Martin Stephenson & the Daintees"
+   }
+  ]
+ },
+ {
+  "name": "Other Stage",
+  "events": [
+   {
+    "name": "Dry The River"
+   }
+  ]
+ },
+ {
+  "name": "West Holts Stage",
+  "events": [
+   {
+    "name": "Chic featuring Nile Rodgers"
+   }
+  ]
+ },
+ {
+  "name": "Sonic",
+  "events": [
+   {
+    "name": "Nas"
+   },
+   {
+    "name": "AlunaGeorge"
+   },
+   {
+    "name": "David Rodigan"
+   },
+   {
+    "name": "Disclosure"
+   },
+   {
+    "name": "Eats Everything"
+   },
+   {
+    "name": "Hot Natured"
+   },
+   {
+    "name": "Rudimental"
+   },
+   {
+    "name": "Sub Focus"
+   },
+   {
+    "name": "The Congos"
+   }
+  ]
+ },
+ {
+  "name": "Avalon Stage",
+  "events": [
+   {
+    "name": "Hobo Jones & The Junkyard Dogs"
+   }
+  ]
+ },
+ {
+  "name": "BBC Introducing... Stage",
+  "events": [
+   {
+    "name": "Ruen Brothers"
+   }
+  ]
+ },
+ {
+  "name": "The Rabbit Hole",
+  "events": [
+   {
+    "name": "Nick Warren"
+   }
+  ]
+ },
+ {
+  "name": "Cabaret & Theatre",
+  "events": [
+   {
+    "name": "John Otway"
+   }
+  ]
+ },
+ {
+  "name": "Poetry & Words Stage",
+  "events": [
+   {
+    "name": "Attila the Stockbroker"
+   }
+  ]
+ },
+ {
+  "name": "Gaz's Rocket Lounge (Shangri-La)",
+  "events": [
+   {
+    "name": "Ed Tudor Pole"
+   },
+   {
+    "name": "Gaz Mayall"
+   }
+  ]
+ },
+ {
+  "name": "Shangri-La",
+  "events": [
+   {
+    "name": "Hypnotic Brass Ensemble"
+   },
+   {
+    "name": "Sam and The Womp"
+   }
+  ]
+ },
+ {
+  "name": "Croissant Neuf Big Top",
+  "events": [
+   {
+    "name": "The Ten Pound Suit Band"
+   }
+  ]
+ },
+ {
+  "name": "Toad Hall (Green Futures Field)",
+  "events": [
+   {
+    "name": "Caroline Lucas"
+   },
+   {
+    "name": "Rodney Branigan"
+   },
+   {
+    "name": "Tankus the Henge"
+   },
+   {
+    "name": "Telling the Bees"
+   },
+   {
+    "name": "The Portraits"
+   },
+   {
+    "name": "Tony Benn"
+   }
+  ]
+ },
+ {
+  "name": "Kidz Field",
+  "events": [
+   {
+    "name": "Rhubarb Theatre"
+   }
+  ]
+ }
+]
